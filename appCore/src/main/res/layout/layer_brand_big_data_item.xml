@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:id="@+id/ll_out_containter"
+        android:layout_marginTop="6dp">
+
+    <!--android:background="@drawable/img_default_grid"-->
+    <RelativeLayout
+            android:id="@+id/rlayout_deal_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@+id/iv_deal_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        <ImageView
+                android:id="@+id/iv_top_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/ic_toptab_new_grid"
+                android:visibility="visible" />
+
+        <ImageView
+                android:id="@+id/iv_baokuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/baokuan"
+                android:visibility="gone" />
+
+        <ImageView
+                android:id="@+id/iv_deal_favor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/ic_deal_big_favor_nor"
+                android:visibility="visible" />
+
+        <ImageView
+                android:id="@+id/iv_deal_status_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_selltip_finish"
+                android:visibility="gone" />
+
+        <ImageView
+                android:id="@+id/iv_deal_status_will_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_selltip_will_start"
+                android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_below="@+id/rlayout_deal_image"
+            android:id="@+id/rl_right_text"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/v_item_deal_content_height"
+            android:background="@drawable/bg_big_deal_title"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp">
+        <RelativeLayout
+                android:id="@+id/rlayout_deal_price"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/v_item_deal_price_layer_height">
+            <TextView
+                    android:id="@+id/tv_curprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="@color/v_price_red_color"
+                    android:textSize="@dimen/v_item_deal_title_size" />
+            <TextView
+                    android:id="@+id/tv_detail_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_curprice"
+                    android:singleLine="true"
+                    android:textColor="@color/v_light_gray_color"
+                    android:textSize="@dimen/v_item_deal_little_text_size" />
+            <TextView
+                    android:id="@+id/tv_back_integration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:singleLine="true"
+                    android:text="返积分"
+                    android:textColor="@color/v_light_gray_color"
+                    android:textSize="@dimen/v_item_deal_little_text_size"
+                    android:visibility="visible" />
+            <RelativeLayout
+                    android:layout_toRightOf="@id/tv_detail_original_price"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_store_name"
+                        android:layout_marginLeft="@dimen/deal_coupon_list_text_marginLeft"
+                        android:background="@drawable/bg_deal_list_coupon_circle"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/deal_coupon_list_text_paddingBottomAndTop"
+                        android:paddingLeft="@dimen/deal_coupon_list_text_paddingLeftAndRight"
+                        android:paddingRight="@dimen/deal_coupon_list_text_paddingLeftAndRight"
+                        android:paddingTop="@dimen/deal_coupon_list_text_paddingBottomAndTop"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/v_item_deal_little_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/rlayout_deal_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+            <!--<LinearLayout
+                android:id="@+id/layout_iv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_new"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_phone_exclusive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone_exclusive"
+                    android:visibility="visible" />
+            </LinearLayout>-->
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/v_title_black_color"
+                    android:textSize="@dimen/v_item_big_deal_title_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlayout_deal_discount"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/iv_baoyou"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_item_baoyou"
+                />
+            <RelativeLayout
+                android:layout_toRightOf="@+id/iv_baoyou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/v_light_gray_color"
+                    android:textSize="@dimen/v_item_deal_little_text_size" />
+              <LinearLayout
+                  android:layout_toLeftOf="@id/tv_where"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_sell_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/v_light_gray_color"
+                    android:textSize="@dimen/v_item_deal_little_text_size" />
+              </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/tv_mask"
+            android:visibility="gone"
+            android:background="@color/lottery_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</RelativeLayout>

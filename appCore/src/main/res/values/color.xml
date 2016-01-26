@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="v_title_bg">#ef4949</color>
+    <color name="v_title_bg_sel">#cf364c</color>
+    <color name="v_title_searchet">#cd2b42</color>
+    <color name="v_bg_big">#f0f0f0</color>
+    <color name="v_bg_big_item_deal">#ffffff</color>
+
+    <color name="v_milky_white">#b9b9b9</color>
+    <color name="v_milky">#f7f7f7</color>
+    <color name="v_title_black_color">#333333</color>
+    <color name="v_light_black_color">#444444</color>
+    <color name="v_price_red_color">#e20c24</color>
+    <color name="v_light_gray_color">#A0A0A0</color>
+    <color name="v_gray_color">#666666</color>
+    <color name="v_dark_gray_color">#677487</color>
+    <color name="v_hint_color">#b2b2b2</color>
+    <color name="v_common_line_color">#f0f0f0</color>
+    <color name="v_common_divider_line_color">#e5e5e5</color>
+    <color name="v_line_color_ec">#ececec</color>
+    <color name="v_line_color_f6">#f6f6f6</color>
+    <color name="v_text_color_84">#848484</color>
+    <color name="v_color_f9">#f9f9f9</color>
+    <color name="v_color_ee">#eeeeee</color>
+    <color name="v_color_f5">#f5f5f5</color>
+    <color name="v_color_blue">#00B2C2</color>
+    <color name="v_color_e0">#e0e0e0</color>
+    <color name="v_color_red">#ff6076</color>
+    <color name="v_color_d5">#d5d5d5</color>
+    <color name="v_color_milk_yellow">#fef8ed</color>
+    <color name="v_color_idendity">#697689</color>
+    <color name="v_color_60ff">#99ffffff</color>
+    <color name="v_text_color_e7">#e7e7e7</color>
+    <color name="v_text_color_bb">#bbbbbb</color>
+    <color name="v_text_color_b3">#B3B3B3</color>
+    <color name="recharebg"> #697486</color>
+
+    <color name="v_title_color_red">#ff3c78</color>
+    <color name="v_title_color_blue">#009bec</color>
+    <color name="v_title_color_graeen">#00b6c6</color>
+    <color name="v_title_color_orange">#f67739</color>
+    <color name="v_title_co">#87000000</color>
+
+    <!--3.0-->
+
+
+    <color name="bottom_tag">#ff644e</color>
+    <color name="item_bg_color">#ff6f5b</color>
+    <color name="black">#000000</color>
+    <color name="tabblack">#5f5f5f</color>
+    <color name="lottery_gray">#f0f0f0</color>
+    <color name="gray">#d2dbdf</color>
+    <color name="white">#ffffff</color>
+    <color name="milky">#f7f7f7</color>
+    <color name="orginal_price_bg">#ff4e35</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="blacktranslucent_background">#99000000</color>
+    <color name="light_gray_translucent_background">#33000000</color>
+    <color name="gray_translucent_background">#55000000</color>
+    <color name="milk_translucent_background">#E0FFFFFF</color>
+    <color name="deep_gray">#666666</color>
+    <color name="sky_blue">#098eff</color>
+    <color name="light_gray">#999999</color>
+    <color name="red">#a92719</color>
+    <color name="gray_white">#ececec</color>
+    <color name="progress_bg">#00d2ff</color>
+    <color name="light_red">#ff6845</color>
+    <color name="holo_light_blue">#ff3299cc</color>
+    <color name="light_white">#FFF6F6F6</color>
+    <color name="global_dumplings_color">#baa7a1</color>
+    <color name="deep_black_bg">#2E2E2E</color>
+    <color name="dark_gray">#888888</color>
+    <color name="light_stoke_gray">#eaeaea</color>
+    <color name="light_black">#919191</color>
+    <color name="light_blue">#33B5E5</color>
+    <color name="light_orgin">#FF6F5B</color>
+    <color name="brand_group_title_unselect">#fae1e4</color>
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="list_item_bg">#ffe7e6e3</color>
+    <color name="weixin_copy_sel">#ffc7ba</color>
+    <color name="weixin_cancel_sel">#7c7c7c</color>
+    <color name="weixin_bottom">#e0000000</color>
+    <color name="orange_red">#FD6000</color>
+    <color name="banner_circle_gray">#D9D9D9</color>
+    <color name="transparent">#00000000</color>
+    <color name="v_color_dd">#dddddd</color>
+    <color name="v_color_ca">#CACACA</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="newbrand">#ffcc00</color>
+
+    <color name="v_color_f0">#f0f0f0</color>
+    <color name="v_color_f8">#f8f8f8</color>
+    <color name="v_color_e8">#e8e8e8</color>
+    <color name="v_color_d8">#d8d8d8</color>
+    <color name="chat_time_gray_white">#b9c0ca</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="user_center_red">#ef4949</color>
+    <color name="dark_gray_white">#33888888</color>
+    <color name="lottery_code_fail">#9c9c9c</color>
+
+    <color name="wish_enable">#ef4949</color>
+    <color name="wish_disable">#999999</color>
+    <color name="wish_normal">#4d596d</color>
+
+    <color name="im_comment_check">#4bc745</color>
+    <color name="im_comment_check_gray">#666666</color>
+    <color name="im_comment_uncheck">#d1d1d1</color>
+    <color name="im_login_waiting">#999999</color>
+
+    <color name="user_tele_verify_code_blue">#3498db</color>
+    <color name="virtual_title">#cc1a1a1a</color>
+    <color name="light_red_other">#fd7989</color>
+
+    <color name="header_color">#FFD800</color>
+    <color name="taobao_header_color">#f9f9f9</color>
+    <color name="taobao_header_color_top">#f0f0f0</color>
+
+    <color name="guide_tip_color">#ffbdc0</color>
+
+    <!-- v3 0元抽奖 -->
+    <color name="bg_color_dayget">#F0A20B</color>
+    <color name="bg_color_invite">#FF8C11</color>
+    <color name="bg_color_exchange">#FF6A19</color>
+    <color name="bg_color_dayget_unable">#D1D1D1</color>
+
+    <color name="im_bg_history_one">#70c8f8</color>
+    <color name="im_bg_history_two">#35d2c9</color>
+    <color name="im_bg_history_three">#fa979c</color>
+
+    <!-- 今日更新切换分类View没选中字体颜色 -->
+    <color name="category_left_view_unchecked_tv">#4D5765</color>
+    <!-- 半透明 -->
+    <color name="half_transparent">#80ffffff</color>
+
+    <!-- 拍下和领券减价 list的背景色 -->
+    <color name="deal_coupon_list_tv_background">#ff5b5b</color>
+
+    <!-- 品牌团“更多品牌”颜色 -->
+    <color name="text_color_brand_wall_more">#BABABA</color>
+
+    <color name="category_deal_sort_unchecked">#9D9D9D</color>
+    <color name="category_deal_right_view_text_color">#545c66</color>
+    <color name="new_home_list_head">#545c66</color>
+    <color name="new_home_background_color">#f6f6f6</color>
+
+    <color name="new_home_head_line_color">#35d2c9</color>
+
+    <color name="app_internal_line">#f1f1f1</color>
+    <color name="app_title_text_main">#27272f</color>
+    <color name="app_title_text_second">#9d9d9d</color>
+    <color name="app_title_text_select_red">#e30c26</color>
+    <!--新首页 头部背景色-->
+    <color name="home_top_bacground">#e20c24</color>
+    <color name="home_top_search">#cf010b</color>
+
+
+    <!--新首页  头部搜索框字体颜色-->
+    <color name="home_top_search_et_color">#e08d8f</color>
+    <color name="home_top_tab_more_category">#4d5f67</color>
+
+</resources>

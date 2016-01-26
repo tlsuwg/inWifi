@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.headered.PullToRefreshHeaderGridView_3 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/tools"
+    android:id="@+id/pull_header_grid_view"
+    test:showheader="true"
+    test:titleheight="0dp"
+    test:ptrMode=""
+
+    android:background="#f0f0f0"
+    android:layout_width="fill_parent"
+    android:drawSelectorOnTop="false"
+    android:scrollingCache="false"
+    android:listSelector="@color/white"
+    android:layout_height="fill_parent" />

@@ -1,0 +1,89 @@
+<resources>
+    <string-array name="platforms">
+        <item>微信</item>
+        <item>微信朋友圈</item>
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+        <item>QQ</item>
+        <item>QQ空间</item>
+        <item>短信</item>
+        <!-- <item>邮件</item>-->
+    </string-array>
+
+    <string-array name="questions">
+        <item>1）宝贝价格跟折800不同</item>
+        <item>2）什么是VIP价？如何成为VIP？</item>
+        <item>3）刚打开就显示已下架</item>
+    </string-array>
+
+    <string-array name="emails">
+        <item>163.com</item>
+        <item>126.com</item>
+        <item>qq.com</item>
+        <item>gmail.com</item>
+        <item>sina.com</item>
+        <item>sohu.com</item>
+        <item>yahoo.com</item>
+        <item>hotmail.com</item>
+    </string-array>
+
+    <!--<string-array name="hot_city_name">
+        <item>北京</item>
+        <item>深圳</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>全部城市</item>
+    </string-array>
+    <string-array name="hot_city_id">
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>5</item>
+        <item>-2</item>
+    </string-array>
+    <string-array name="hot_city_pinyin">
+        <item>beijing</item>
+        <item>shenzhen</item>
+        <item>shanghai</item>
+        <item>guangzhou</item>
+        <item>quanbu</item>
+    </string-array>-->
+
+    <!--品牌价值体现文案-->
+    <string-array name="brand_tips">
+        <item>人工筛选热门商品 砍出全网逆天价</item>
+        <item>全场任性一件包邮</item>
+        <item>折800人多力量大 砍出最低价</item>
+        <item>商城商品8天无理由退换货</item>
+        <item>每日9点上新1500款</item>
+        <item>商品全部小编验货 人工质检哦</item>
+        <item>每晚7点疯狂夜场嗨起来</item>
+        <item>随时抽检，为购物之旅保驾护航</item>
+        <item>质量问题 折800先行赔付</item>
+        <item>8块8包邮突破行业底价</item>
+        <item>优品汇 厂价直供折800</item>
+        <item>折800--1亿买家的精明选择</item>
+        <item>天天折800，不再被人宰！</item>
+        <item>每日三嗨：吃饭睡觉折800</item>
+        <item>没有人比我们更心疼你的钱包</item>
+        <item>设置身份，订制属于你的商品</item>
+        <item>折800，便宜一样有好货</item>
+        <item>淘宝双十一39，折800只要8.8！</item>
+        <item>9道验货工序 严选优质商品</item>
+        <item>签到攒积分可换购商品哦 </item>
+        <item>折800能充话费啦</item>
+        <item>设置宝宝生日，优选适龄商品</item>
+        <item>品牌团，大牌商品白菜价</item>
+        <item>积分能当钱花哦，购物抵现5%</item>
+        <item>放心省钱折800</item>
+        <item>招募实力商家保证质量服务</item>
+    </string-array>
+
+    <!--研发的名字-->
+    <string-array name="developer_names">
+        <item>林</item>
+        <item>小笼包</item>
+        <item>佳斌</item>
+        <item>小勇</item>
+    </string-array>
+</resources>

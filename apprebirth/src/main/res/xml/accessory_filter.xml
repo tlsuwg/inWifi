@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>    
+	<usb-accessory model="WCHGPIODemo" manufacturer="WCH" version="1.0"/>
+	<usb-accessory  manufacturer="FTDI" />
+	<usb-accessory model="WCHUARTDemo" manufacturer="WCH" version="1.0"/>
+</resources>

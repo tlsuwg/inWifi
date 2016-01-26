@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containterll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v_line_color_f6"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/title_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bg_height"
+        android:background="@color/white"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:orientation="vertical"
+            android:text="了解使用:" />
+
+        <TextView
+            android:id="@+id/understand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:text="需要两部手机：废旧的Android手机作为被控制设备，您的日常手机作为遥控。\n废旧手机，变废为宝，做视频监控，做小夜灯，做物联网控制核心......快来体验吧" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/be_server"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:text="被控制设备\n(请优先设置)" />
+
+            <Button
+                android:id="@+id/be_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:text="控制端" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/load_failure"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingTop="@dimen/zhi_banner_height"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/load_failure_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/app_net_error"/>
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/load_refresh_session"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/refresh_session_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_rf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/app_refresh_success"
+            android:drawablePadding="10dip"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="刷新成功!"
+            android:textColor="#848484"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/load_part_failure"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/zhi_banner_height"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/v_color_ee"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/app_no_net_crabs"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/img_stats_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@mipmap/app_close_sel"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/load_no_date"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/loaded_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/app_data_null"/>
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loaded_no_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="没有任何消息通知哦"
+            android:textColor="@color/light_black"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_load_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layout_category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lay_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_bg_height"
+                android:background="@color/translucent_background"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sort"
+                android:layout_width="fill_parent"
+                android:layout_height="34dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@color/translucent_background"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_below="@id/layout_category_title">
+
+            <LinearLayout
+                android:id="@+id/layer_brand_tip_layout"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_circle_white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+                <!--<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="47.166668dp"
+                    android:gravity="center">
+                    <ProgressBar
+                        android:layout_height="47.166668dp"
+                        android:layout_width="47.166668dp"
+                        android:id="@+id/pb_loading"
+                        android:indeterminateDrawable="@drawable/load_mid_progress"/>
+                    <TextView
+                        android:id="@+id/tv_loading"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:text="努力加载中..."
+                        android:textColor="@color/v_text_color_84"/>
+                </LinearLayout>-->
+                <com.hxuehh.tao800.views.LoadingView
+                    android:id="@+id/loading_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_brand_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/v_text_color_84"
+                    android:textSize="@dimen/tip_text_Size"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
