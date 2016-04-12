@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.hxuehh.reuse_Process_Imp.staicUtil.devInfo.ScreenUtil;
 import com.hxuehh.appCore.faceFramework.faceDomain.interfacesDomain.commonInterface.FaceLoadCallBack;
-import com.hxuehh.reuse_Process_Imp.staicUtil.utils.Tao800Util;
+import com.hxuehh.reuse_Process_Imp.staicUtil.utils.TaoCCUtil;
 
 
 
@@ -193,7 +193,7 @@ public class WarnView extends LinearLayout {
         loadNodata.setVisibility(View.GONE);
         loadFailure.setVisibility(View.GONE);
         loadPartFailure.setVisibility(View.GONE);
-        Tao800Util.showToast(this.getContext(), R.string.label_data_error);
+        TaoCCUtil.showToast(this.getContext(), R.string.label_data_error);
     }
     public void setLoadTimeoutNoCache(){
         isPullRefresh = false;
@@ -213,7 +213,7 @@ public class WarnView extends LinearLayout {
         loadNodata.setVisibility(View.GONE);
         loadFailure.setVisibility(View.GONE);
         loadPartFailure.setVisibility(View.GONE);
-        Tao800Util.showToast(this.getContext(), R.string.label_net_timeout);
+        TaoCCUtil.showToast(this.getContext(), R.string.label_net_timeout);
     }
     public void setLoadServerErrorNoCache(){
         isPullRefresh = false;
@@ -232,7 +232,7 @@ public class WarnView extends LinearLayout {
         loadNodata.setVisibility(View.GONE);
         loadFailure.setVisibility(View.GONE);
         loadPartFailure.setVisibility(View.GONE);
-        Tao800Util.showToast(this.getContext(), R.string.label_server_error);
+        TaoCCUtil.showToast(this.getContext(), R.string.label_server_error);
     }
     public void setLoadCommonErrorNoCache(){
         isPullRefresh = false;
@@ -251,7 +251,7 @@ public class WarnView extends LinearLayout {
         loadNodata.setVisibility(View.GONE);
         loadFailure.setVisibility(View.GONE);
         loadPartFailure.setVisibility(View.GONE);
-        Tao800Util.showToast(this.getContext(), R.string.label_net_timeout);
+        TaoCCUtil.showToast(this.getContext(), R.string.label_net_timeout);
 
     }
 
@@ -353,7 +353,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_data_error);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_data_error);
                 break;
 
             case LOAD_TIMEOUT_NO_CACHE:
@@ -372,7 +372,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
                 break;
 
             case LOAD_SERVER_ERROR_NO_CACHE:
@@ -391,7 +391,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_server_error);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_server_error);
                 break;
 
             case LOAD_COMMON_ERROR_NO_CACHE:
@@ -410,7 +410,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
                 break;
 
 
@@ -491,7 +491,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_data_error);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_data_error);
                 break;
 
             case LOAD_TIMEOUT_NO_CACHE:
@@ -510,7 +510,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
                 break;
 
             case LOAD_SERVER_ERROR_NO_CACHE:
@@ -529,7 +529,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_server_error);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_server_error);
                 break;
 
             case LOAD_COMMON_ERROR_NO_CACHE:
@@ -548,7 +548,7 @@ public class WarnView extends LinearLayout {
                 loadNodata.setVisibility(View.GONE);
                 loadFailure.setVisibility(View.GONE);
                 loadPartFailure.setVisibility(View.GONE);
-                Tao800Util.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
+                TaoCCUtil.showShortToast(this.getFaceContext(), R.string.label_net_timeout);
                 break;
 
 

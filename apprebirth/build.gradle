@@ -5,12 +5,12 @@ android {
         suwgconfig {
             keyAlias 'suwg'
             keyPassword 'suweiguangsusu'
-            storeFile file('C:/Users/suwg/Desktop/四剑客/我的证书/suwg.keystore')
+            storeFile file('e:/我的证书/suwg.keystore')
             storePassword 'suweiguangsusua'
         }
     }
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '23.0.3'
     defaultConfig {
         applicationId "com.hxuehh.rebirth"
         minSdkVersion 10

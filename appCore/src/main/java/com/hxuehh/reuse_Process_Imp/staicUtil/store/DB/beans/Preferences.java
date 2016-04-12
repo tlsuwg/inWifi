@@ -64,7 +64,7 @@ public class Preferences extends Bean {
         return StringUtil.isEmpty(value) ? defaultValue : value;
     }
 
-// TODO: move request key to tuan800
+// TODO: move request key to TuanDD
 //    public void initRequestKey(TelephonyManager tm, String partnerKey, String partnerValue) {
 //        if (StringUtil.isEmpty(getRequestKey())) {
 //            final String s = "5jHJ@^9B32!";

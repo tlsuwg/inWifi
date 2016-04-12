@@ -398,7 +398,7 @@ public class LoadHeaderGridView extends LoadView {
                 } else {
                     hideSpecialFootView();
                 }
-//                Tao800Util.showShortToast(mContext, R.string.pull_to_refresh_nodata);
+//                TaoCCUtil.showShortToast(mContext, R.string.pull_to_refresh_nodata);
             }
             return;
         }

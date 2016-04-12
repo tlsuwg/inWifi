@@ -12,27 +12,26 @@ public class OfficialNetwork extends BaseNetwork {
 
     public OfficialNetwork() {
         // ------------------- base ---------------------
-        BASE_API = "http://m.api.zhe800.com/";
+        BASE_API = "http://m.api./zhenCC9.com/";
 
-        BASE_Z_API = "http://zapi.zhe800.com/";
-        BASE_BUY_API = "http://tbuy.m.zhe800.com/";
+        BASE_Z_API = "http://zapi./zhenCC9.com/";
+        BASE_BUY_API = "http://tbuy.m./zhenCC9.com/";
 
-        // zhe800wap页、apk下载地址、新浪、腾讯微博地址、用户反馈
-        TAO800_WAP = "http://m.zhe800.com";
-        APK_URL = "http://m.zhe800.com/download";
+        TaoCC_WAP = "http://m./zhenCC9.com";
+        APK_URL = "http://m./zhenCC9.com/download";
         APK_NEW_URL = "http://weibo.com/p/100404127430";
-        TAO800_SINA_WEIBO = "http://weibo.com/tao800ju";
-        TAO800_TENCENT_WEIBO = "http://t.qq.com/tao800wang";
-        FEEDBACK_URL = "http://m.api.zhe800.com/user/feedback";
+        TaoCC_SINA_WEIBO = "http://weibo.com/TaoCCju";
+        TaoCC_TENCENT_WEIBO = "http://t.qq.com/TaoCCwang";
+        FEEDBACK_URL = "http://m.api./zhenCC9.com/user/feedback";
 
         // 砸蛋介绍
-        ZADAN_URL = "http://s.zhe800.com/ms/zhe800hd/app/zadan/zadan_intro.html";
+        ZADAN_URL = "http://s./zhenCC9.com/ms//zhenCC9hd/app/zadan/zadan_intro.html";
 
         // 签到
         SIGN_URL = BASE_Z_API + "checkins";
 
         // 获取启动海报数据
-        START_INFO = BASE_API + "tao800/startinfo.json";
+        START_INFO = BASE_API + "TaoCC/startinfo.json";
 
         // 获取分类数据
         CATEGORY_URL = BASE_API + "v6/tags";
@@ -47,7 +46,7 @@ public class OfficialNetwork extends BaseNetwork {
         DEAL_FAVOR_URL = BASE_Z_API + "cn/favorites";
 
         // deal收藏H5详情
-        DEAL_H5_URL = "http://th5.m.zhe800.com/h5/shopdeal?id=";
+        DEAL_H5_URL = "http://th5.m./zhenCC9.com/h5/shopdeal?id=";
 
         // 分类 v3.6.3全部升级成v4
         //CATEGORY_DEAL_URL = BASE_API + "v3/deals";
@@ -64,7 +63,7 @@ public class OfficialNetwork extends BaseNetwork {
         BRAND_GROUP_URL = BASE_API + "v2/brand/branddeals";
 
         // 今日精选数据
-        TADAY_DEALS_URL = BASE_API + "tao800/prdofcategory.json";
+        TADAY_DEALS_URL = BASE_API + "TaoCC/prdofcategory.json";
 
         // 手机周边
         PHONE_NEAR_URL = BASE_API + "v3/mobile/deals";
@@ -74,7 +73,7 @@ public class OfficialNetwork extends BaseNetwork {
         JINGPIN_DEALS_URL = BASE_API + "v2/forecast/deals";
 
         // 明日预告数据5
-        TOMORROW_DEALS_URL = BASE_API + "tao800/prdoftomorrow.json";
+        TOMORROW_DEALS_URL = BASE_API + "TaoCC/prdoftomorrow.json";
 
         // 根据ids获取deal列表
         SYNC_SELL_DEAL = BASE_API + "v4/deals/ids";
@@ -108,44 +107,44 @@ public class OfficialNetwork extends BaseNetwork {
         SELL_DEAL_TIP_COUNT = BASE_API + "cn/deal_subscibe";
 
         // 活动、push相关
-        BANNER_V2_URL = BASE_API + "tao800/bannerv2.json";
+        BANNER_V2_URL = BASE_API + "TaoCC/bannerv2.json";
 
-        HOT_BANNER_URL = BASE_API + "tao800/hotbanner.json";
+        HOT_BANNER_URL = BASE_API + "TaoCC/hotbanner.json";
 
         PUSH_URL = BASE_API + "pushv3.2/public";
 
         // 注册邀请好友
-//        ACTIVITE_REGISETER_URL = "http://w.tuan800.com/zhe800/yqhyzc/";
-        ACTIVITE_REGISETER_URL = "http://m.zhe800.com/download_weixinshare/";
+//        ACTIVITE_REGISETER_URL = "http://w.TuanDD.com//zhenCC9/yqhyzc/";
+        ACTIVITE_REGISETER_URL = "http://m./zhenCC9.com/download_weixinshare/";
 
         // 邀请好友加积分
-        ACTIVITE_REGISETER_ADD_INTEGRAL = "http://m.api.tuan800.com/integral/invite_award";
+        ACTIVITE_REGISETER_ADD_INTEGRAL = "http://m.api.TuanDD.com/integral/invite_award";
 
         // 值得逛相关
         ZHI_DEAL_URL = BASE_API + "v2/guang/deals";
         ZHI_CATEGORY_URL = BASE_API + "v2/guang/tags";
 
         // 商品竞拍详情
-        AUCTION_DEAL_DETAIL = "http://zapi.zhe800.com/auction/";
+        AUCTION_DEAL_DETAIL = "http://zapi./zhenCC9.com/auction/";
 
         // 商品竞拍记录
         AUCTION_DEAL_RECORD = BASE_Z_API + "cn/tao_record_deals/auction";
 
         // 商品竞拍出价
-        AUCTION_DEAL_INTEGRAL = "http://zapi.zhe800.com/v2/auction/chujia";
+        AUCTION_DEAL_INTEGRAL = "http://zapi./zhenCC9.com/v2/auction/chujia";
 
         // 竞拍商品列表
         AUCTION_DEAL_LIST = BASE_Z_API + "auction";
 
         // 积分竞拍规则
-        //        AUCTION_RULE = " http://docs.tuan800-inc.com/ued-svn/mobile-wap/tao800/rules31883.html";
-        AUCTION_RULE = "http://s.zhe800.com/ms/zhe800hd/app/client/jifenrules.html";
+        //        AUCTION_RULE = " http://docs.TuanDD-inc.com/ued-svn/mobile-wap/TaoCC/rules31883.html";
+        AUCTION_RULE = "http://s./zhenCC9.com/ms//zhenCC9hd/app/client/jifenrules.html";
 
         // 巨能砍url
-        CUT_PRICE_URL = "http://m.zhe800.com/hd/sale_acts";
+        CUT_PRICE_URL = "http://m./zhenCC9.com/hd/sale_acts";
 
         // 大促banner
-        PROMOTION_SALE_URL = BASE_API + "tao800/salebanner.json";
+        PROMOTION_SALE_URL = BASE_API + "TaoCC/salebanner.json";
 
         // 大促商品列表
         PROMOTION_SALE_DEAL_URL = BASE_API + "v3/deals/promotion";
@@ -154,22 +153,22 @@ public class OfficialNetwork extends BaseNetwork {
         DATA_COUNT_TIP_URL = BASE_API + "v3/deals/count/zaojiuwanba";
 
         // 订单列表页url
-        USER_ORDER_WEB_URL = "http://th5.m.zhe800.com/orders/h5/get_order_list";
+        USER_ORDER_WEB_URL = "http://th5.m./zhenCC9.com/orders/h5/get_order_list";
 
         // 我的优惠券列表
-        USER_COUPON_WEB_URL = "http://th5.m.zhe800.com/h5/coupons/my";
+        USER_COUPON_WEB_URL = "http://th5.m./zhenCC9.com/h5/coupons/my";
 
         // FAQ提示地址
-        WEBVIEW_FAQ_URL = "http://s.zhe800.com/ms/zhe800hd/app/jfintro/helper.html";
-        WEBVIEW_FAQ_URL_PRICE = "http://w.tuan800.com/zhe/faq#jiage";
-        WEBVIEW_FAQ_URL_VIP = "http://w.tuan800.com/zhe/faq#vip";
-        WEBVIEW_FAQ_URL_XIAJIA = "http://w.tuan800.com/zhe/faq#xiajia";
+        WEBVIEW_FAQ_URL = "http://s./zhenCC9.com/ms//zhenCC9hd/app/jfintro/helper.html";
+        WEBVIEW_FAQ_URL_PRICE = "http://w.TuanDD.com/zhe/faq#jiage";
+        WEBVIEW_FAQ_URL_VIP = "http://w.TuanDD.com/zhe/faq#vip";
+        WEBVIEW_FAQ_URL_XIAJIA = "http://w.TuanDD.com/zhe/faq#xiajia";
 
 
         // -------------------------------- passport ----------------------------------
 //    // 登录passport地址
 
-        PASSPORT_BASE_URL = "https://passport.zhe800.com/m/";
+        PASSPORT_BASE_URL = "https://passport./zhenCC9.com/m/";
 
         // 用户注册passport
         PASSPORT_REGISTER_URL_HTTPS = PASSPORT_BASE_URL + "users";
@@ -193,8 +192,8 @@ public class OfficialNetwork extends BaseNetwork {
         // 绑定手机号
         PASSPORT_BIND_PHONE_HTTPS = PASSPORT_REGISTER_URL_HTTPS + "/bind_phone_number";
 
-        // tuan800升级提醒地址
-        TUAN800_SOFT_URL = "http://m.api.tuan800.com/api/checkconfig/v3/soft";
+        // TuanDD升级提醒地址
+        TuanDD_SOFT_URL = "http://m.api.TuanDD.com/api/checkconfig/v3/soft";
 
 
         // ------------------------------- 积分 ---------------------------------
@@ -205,10 +204,10 @@ public class OfficialNetwork extends BaseNetwork {
         GET_INTEGRAL_POINT = BASE_API + "integral/user?";
 
         // 积分攻略
-        INTEGRAL_RULE = "http://m.api.zhe800.com/integral/rule?product=tao800";
+        INTEGRAL_RULE = "http://m.api./zhenCC9.com/integral/rule?product=TaoCC";
 
         // 积分说明
-        JIFENSHUOMING_URL = "http://s.zhe800.com/ms/zhe800hd/app/jfintro/index.html";
+        JIFENSHUOMING_URL = "http://s./zhenCC9.com/ms//zhenCC9hd/app/jfintro/index.html";
 
         // 签到记录
         INTEGRAL_HISTORY = BASE_API + "integral/bill?";
@@ -217,22 +216,22 @@ public class OfficialNetwork extends BaseNetwork {
         INTEGRATION_HISTORY = BASE_Z_API + "cn/score_histories";
 
         //下载应用加积分
-        DOWNLOADAPKFORINTEGRAL = "http://m.api.zhe800.com/recommendv2/downloadAppv2";
+        DOWNLOADAPKFORINTEGRAL = "http://m.api./zhenCC9.com/recommendv2/downloadAppv2";
 
         // 有效积分信息
-        INTEGRATION_ACCOUNTS = "http://m.api.tuan800.com/mobile_api/v3/score_accounts";
+        INTEGRATION_ACCOUNTS = "http://m.api.TuanDD.com/mobile_api/v3/score_accounts";
 
-        INTEGRATION_PASSPORT_ACCOUNTS = "http://sso.zhe800.com/m/jump_to";
+        INTEGRATION_PASSPORT_ACCOUNTS = "http://sso./zhenCC9.com/m/jump_to";
 
         //是否关注微信公共账号，未关注获得邀请码
-//        INVITATION_CODE = TAO800_WAP + "/hd/wx_follow_check";
+//        INVITATION_CODE = TaoCC_WAP + "/hd/wx_follow_check";
         INVITATION_CODE = BASE_Z_API + "cn/wx_follow_check";
 
         //是否关注QQ空间公共账号，未关注获得邀请码
-        QQSPACE_INVITATION_CODE = "http://zapi.zhe800.com/user/qq_follow_check";
+        QQSPACE_INVITATION_CODE = "http://zapi./zhenCC9.com/user/qq_follow_check";
 
         // 获取积分兑换或抽奖规则说明
-        GET_RULES_WELFARE_RAFFLE = BASE_API + "tao800/ruledesc.json";
+        GET_RULES_WELFARE_RAFFLE = BASE_API + "TaoCC/ruledesc.json";
 
         //积分现金购详情
         WELFARE_INTEGRAL_BUY_TYPE = BASE_API + "v3/jifendeal";
@@ -249,10 +248,10 @@ public class OfficialNetwork extends BaseNetwork {
         GET_USER_GRADE = BASE_Z_API + "profile/grade";
 
         // 会员等级特权URL
-        WEBVIEW_MEMBER_GRADE = "http://s.zhe800.com/ms/zhe800hd/app/client/jifendengji.html";
+        WEBVIEW_MEMBER_GRADE = "http://s./zhenCC9.com/ms//zhenCC9hd/app/client/jifendengji.html";
 
         //获取应用推荐
-        RECOMMENDATION_URL = "http://m.api.tuan800.com/" + "recommendv2/api/v1/recommendv2/";
+        RECOMMENDATION_URL = "http://m.api.TuanDD.com/" + "recommendv2/api/v1/recommendv2/";
 
         //获取搜索推荐
         SEARCH_RECOMMEND_URL = BASE_API + "v2/suggestion";
@@ -261,19 +260,19 @@ public class OfficialNetwork extends BaseNetwork {
         SEARCH_GUESS_URL = BASE_API + "v3/deals/recommend";
 
         // 获取各个网站的信息，主要用于淘宝的相关跳转
-        LOAD_SITE_INFO = "http://m.api.zhe800.com/tao800/clientcontrol/android/1/client.json";
+        LOAD_SITE_INFO = "http://m.api./zhenCC9.com/TaoCC/clientcontrol/android/1/client.json";
 
         // 淘宝手机充值
-        TAOBAO_PHONE_RECHARGE = "http://out.zhe800.com/m/chongzhi";
+        TAOBAO_PHONE_RECHARGE = "http://out./zhenCC9.com/m/chongzhi";
 
         // 淘宝买彩票
-        TAOBAO_CAIPIAO = "http://out.zhe800.com/m/caipiao";
+        TAOBAO_CAIPIAO = "http://out./zhenCC9.com/m/caipiao";
 
         // 淘宝帐号手机绑定查询
-        TAOBAO_BIND_PHONE_LNQUIRE = "http://passport.tuan800.com/account/wap_merge/login";
+        TAOBAO_BIND_PHONE_LNQUIRE = "http://passport.TuanDD.com/account/wap_merge/login";
 
         // 淘宝帐号合并
-        TAOBAO_PHONE_MERGER = "http://sso.zhe800.com/m/jump_to?return_to=http://passport.tuan800.com/account/wap_merge/bind_info";
+        TAOBAO_PHONE_MERGER = "http://sso./zhenCC9.com/m/jump_to?return_to=http://passport.TuanDD.com/account/wap_merge/bind_info";
 
         // 获取用户推荐IDs
         LOAD_USER_LIKE_IDS = BASE_API + "v1/cn/get_cid";
@@ -336,24 +335,24 @@ public class OfficialNetwork extends BaseNetwork {
         TODAY_TENDEALS_URL = BASE_API + "v3/tendeals";
 
         // 商品保证URL
-        DEAL_INDEMENDITY_URL = "http://s.zhe800.com/ms/zhe800hd/app/xb/xb.html";
+        DEAL_INDEMENDITY_URL = "http://s./zhenCC9.com/ms//zhenCC9hd/app/xb/xb.html";
 
         // 首页底部分类URL
         BOTTOM_CATEGORY_URL = BASE_API + /*"v3/homesetting"*/ "homesetting/v5";
 
         //获取用户优惠券信息URL
-        GET_USER_COUPON_URL = "http://th5.m.zhe800.com/h5/api/coupons/usercoupons";
+        GET_USER_COUPON_URL = "http://th5.m./zhenCC9.com/h5/api/coupons/usercoupons";
 
 
 
         // 检查是否是推广码
-        CHECK_PROMO_CODE_URL = "http://campus.tuan800.com/campus/promotion/validatePromoCode";
+        CHECK_PROMO_CODE_URL = "http://campus.TuanDD.com/campus/promotion/validatePromoCode";
 
         // 校园专题列表页
         SCHOOL_DEAL_URL = BASE_API + "v3/deals/taocampus";
 
         //校园激活
-        ACTIVATE_SCHOOL_URL = "http://campus.tuan800.com/woss/campus?";
+        ACTIVATE_SCHOOL_URL = "http://campus.TuanDD.com/woss/campus?";
 
         //升级提醒
 //        REMOTE_VERSION_URL = BASE_API + "api/checkconfig/v3";//老版本
@@ -407,7 +406,7 @@ public class OfficialNetwork extends BaseNetwork {
         SET_PRIZE_MOBILE = BASE_API + "hitegg/setprizemobile.json";
 
         // 我的购物车
-        GET_USER_SHOP_CART = "http://th5.m.zhe800.com/h5/cart/list/my";
+        GET_USER_SHOP_CART = "http://th5.m./zhenCC9.com/h5/cart/list/my";
 
 
         BRAND_GROUP_One_URL = BASE_API + "v6/brand/getdealsbyid";
@@ -443,9 +442,9 @@ public class OfficialNetwork extends BaseNetwork {
         // --------------心愿单 end------------------
 
 
-        IM = "http://im.zhe800.com/com.tuan800.im.userCenter";
-        IM_IMAGE = "http://im.zhe800.com/com.tuan800.im.fileManager";
-        IM_Host = "im.zhe800.com";
+        IM = "http://im./zhenCC9.com/com.TuanDD.im.userCenter";
+        IM_IMAGE = "http://im./zhenCC9.com/com.TuanDD.im.fileManager";
+        IM_Host = "im./zhenCC9.com";
         //为WEB提供离线消息数量查询接口，responsecode=_200表示成功,其他情况返回错误标示的code
         offlineMessageCount = IM + "/im/chatMessage/offlineMessageCount";
 
@@ -460,8 +459,8 @@ public class OfficialNetwork extends BaseNetwork {
 // 返回数据格式：{"data":true,"errorinfo":"","responsecode":"_200"}
         clearOfflineMessage = IM + "/im/chatMessage/clearOfflineMessage";
         ImLoagin = IM + "/im/user/loginUser";
-//    http://imtest1.imtest.com/com.tuan800.im.userCenter/im/user/loginUser?userjid=suwg_3@imtest1.imtest.com&password=-890915866&resource=00000
-//    http://imtest1.imtest.com/com.tuan800.im.userCenter/im/user/loginUser?userjid=test2@imtest1.imtest.com&password=110251488&resource=00000
+//    http://imtest1.imtest.com/com.TuanDD.im.userCenter/im/user/loginUser?userjid=suwg_3@imtest1.imtest.com&password=-890915866&resource=00000
+//    http://imtest1.imtest.com/com.TuanDD.im.userCenter/im/user/loginUser?userjid=test2@imtest1.imtest.com&password=110251488&resource=00000
 //    查询最近联系人信息，按照数组形式返回，包含聊天人jid和最后聊天时间responsecode=_200表示成功,其他情况返回错误标示的code
         recentContacts = IM + "/im/recentContacts/findRecentContacts";
 //    IM系统创建普通用户
@@ -481,7 +480,7 @@ public class OfficialNetwork extends BaseNetwork {
         IM_USER_INFO=IM+"/im/user/userInfo";
         OFFLINE_MESSAGE_COUNT=IM+"/im/chatMessage/v3/offlineMessageCount";
 
-        IM_QUESTION_URL = "http://s.zhe800.com/ms/zhe800hd/app/im/question.html";
+        IM_QUESTION_URL = "http://s./zhenCC9.com/ms//zhenCC9hd/app/im/question.html";
 
         insertUserComments = IM + "/im/statistics/insertUserComments";
 
@@ -499,15 +498,15 @@ public class OfficialNetwork extends BaseNetwork {
         DRESSROOM_BANNER = BASE_API +  "dressroom/banner";
 
         // -- 送礼订单
-        GET_GIVE_NEW_GIFTS = "http://th5.m.zhe800.com/h5/gift/getorderslist";
+        GET_GIVE_NEW_GIFTS = "http://th5.m./zhenCC9.com/h5/gift/getorderslist";
 
         QIN_NIU_TOKEN = BASE_API + "qiniu/uptoken";
 
         SIGN_IS_NEED_REVIVAL = "";// 签到复活状态获取地址
 
-        INVITE_FRIEND="http://m.zhe800.com/h5/cn/hongbao/invite_page";//邀请好友
+        INVITE_FRIEND="http://m./zhenCC9.com/h5/cn/hongbao/invite_page";//邀请好友
 
-        ACTIVE_INFO = "http://api.tuan800.com/mobilelog/activelog/v2/activeinfo";
+        ACTIVE_INFO = "http://api.TuanDD.com/mobilelog/activelog/v2/activeinfo";
 
         // 小米push上传regId
         DEVICE_INFO = BASE_API + "push/deviceinfo";
@@ -529,21 +528,21 @@ public class OfficialNetwork extends BaseNetwork {
 
 
         //3.7.4
-        UPLOAD_HEADVIEW = "https://passport.zhe800.com/m/account/avatar";
-        UPDATE_NICKNAME = "https://passport.zhe800.com/m/account/user_name";
-        JUDGE_LOGIN = "https://passport.tuan800.com";
-        NICKNAME_SETTING = "https://sso.zhe800.com/m/jump_to";
-        JUDGE_LOGIN_HEAD = "https://sso.zhe800.com/m/generate_ticket";
+        UPLOAD_HEADVIEW = "https://passport./zhenCC9.com/m/account/avatar";
+        UPDATE_NICKNAME = "https://passport./zhenCC9.com/m/account/user_name";
+        JUDGE_LOGIN = "https://passport.TuanDD.com";
+        NICKNAME_SETTING = "https://sso./zhenCC9.com/m/jump_to";
+        JUDGE_LOGIN_HEAD = "https://sso./zhenCC9.com/m/generate_ticket";
         URL_CHECK_GIFT = BASE_API + "checkingift/screen";
-        GET_USER_CART_COUNT_URL = "http://th5.m.zhe800.com/h5/api/cart/count";
-        COLLEXT_LISTS_REACHED = "http://zapi.zhe800.com/cn/wl_favorites";
+        GET_USER_CART_COUNT_URL = "http://th5.m./zhenCC9.com/h5/api/cart/count";
+        COLLEXT_LISTS_REACHED = "http://zapi./zhenCC9.com/cn/wl_favorites";
 
-        USER_IDENTITY_GET = "http://m.api.zhe800.com/label";
-        GET_TELCHARGE_EXCHANGESCORE="http://th5.m.zhe800.com/h5/api/gettelchargeexchangescore";
-        GET_TELCHARGE_TEXT="http://m.api.zhe800.com/recharge/points/copywriting";
-        GET_TELCHARGE_ORDER="http://buy.m.zhe800.com/orders/create_jf";
-        GET_TELCHARGE_ISJOIN="http://buy.m.zhe800.com/orders/have_score_buy";
-        GET_TELCHARGE_RULE="http://s.zhe800.com/ms/zhe800hd/app/client/duihuanrules.html";
+        USER_IDENTITY_GET = "http://m.api./zhenCC9.com/label";
+        GET_TELCHARGE_EXCHANGESCORE="http://th5.m./zhenCC9.com/h5/api/gettelchargeexchangescore";
+        GET_TELCHARGE_TEXT="http://m.api./zhenCC9.com/recharge/points/copywriting";
+        GET_TELCHARGE_ORDER="http://buy.m./zhenCC9.com/orders/create_jf";
+        GET_TELCHARGE_ISJOIN="http://buy.m./zhenCC9.com/orders/have_score_buy";
+        GET_TELCHARGE_RULE="http://s./zhenCC9.com/ms//zhenCC9hd/app/client/duihuanrules.html";
 
         //首页一级分类顶部主题馆接口
         HOME_ONE_LEVEL_CLASSIFICATION_THEME=BASE_API+"theme/recommend/home";
@@ -561,6 +560,6 @@ public class OfficialNetwork extends BaseNetwork {
         //今日上新列表数据接口
         CATEGORY_DEAL_LIST_SHANGXIN_URL = BASE_API + "deals/today/v4";
         //精选预告H5页面
-        HOME_JINGXUAN_ADVANCE = "http://h5.m.zhe800.com/m/forecast/foreshow?pub_page_from=zheclient";
+        HOME_JINGXUAN_ADVANCE = "http://h5.m./zhenCC9.com/m/forecast/foreshow?pub_page_from=zheclient";
     }
 }

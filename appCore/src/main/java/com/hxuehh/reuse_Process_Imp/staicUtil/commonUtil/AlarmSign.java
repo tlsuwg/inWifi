@@ -22,7 +22,7 @@ public class AlarmSign {
 
     public static final String PUSH_FLAG_HAS = "push_flag_has";
 
-    public static final String RA_ACTION = "com.tuan800.action.RA_ACTION_".concat(AppConfig.getInstance().CLIENT_TAG);
+    public static final String RA_ACTION = "com.TuanDD.action.RA_ACTION_".concat(AppConfig.getInstance().CLIENT_TAG);
 
     private Context mContext;
     private AlarmManager mAlarmManager;

@@ -44,7 +44,7 @@ public class EventCache {
     protected EventCache() {
         cache = new ArrayList<Event>();
         executorService = Executors.newSingleThreadExecutor();
-        HandlerThread ht = new HandlerThread("_tuan800_analytics");
+        HandlerThread ht = new HandlerThread("_TuanDD_analytics");
         ht.start();
         handler = new Handler(ht.getLooper()) {
             @Override

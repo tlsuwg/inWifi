@@ -35,7 +35,7 @@ public class FileUtil {
     private static final String DST_FOLDER_NAMEDCIM = "DCIM/Camera";
 
     private static String storagePath = "";
-    private static final String DST_FOLDER_NAME = "zhe800Camera";
+    private static final String DST_FOLDER_NAME = "/zhenCC9Camera";
 
     private static String initPath() {
         if (storagePath.equals("")) {

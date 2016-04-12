@@ -7,7 +7,7 @@ import android.os.Build;
 import android.text.TextUtils;
 
 import com.hxuehh.appCore.develop.LogUtil;
-import com.hxuehh.reuse_Process_Imp.staicUtil.utils.Tao800Util;
+import com.hxuehh.reuse_Process_Imp.staicUtil.utils.TaoCCUtil;
 
 import com.hxuehh.appCore.app.SuApplication;
 
@@ -576,7 +576,7 @@ public class DateUtil {
     }
 
     public static String getBrandReminTime(String time) {
-        if (Tao800Util.isNull(time)) {
+        if (TaoCCUtil.isNull(time)) {
             return "";
         }
 
@@ -775,7 +775,7 @@ public class DateUtil {
 
     private static DateResult getMyBrandReminTime(String endTime) {
 
-        if (Tao800Util.isNull(endTime)) {
+        if (TaoCCUtil.isNull(endTime)) {
             return new DateResult(DateResult.DATE_RESULT_NO_NULL, "");
         }
 
@@ -853,7 +853,7 @@ public class DateUtil {
 
 
 //    public static DateResult getMuYingBrandReminTimeOther(String time) {
-//        if (Tao800Util.isNull(time)) {
+//        if (TaoCCUtil.isNull(time)) {
 //            new DateResult(DateResult.DATE_RESULT_NO_NULL, "");
 //        }
 //
@@ -920,7 +920,7 @@ public class DateUtil {
     }
 
     public static DateResult getMuYingBrandReminTime(String time) {
-        if (Tao800Util.isNull(time)) {
+        if (TaoCCUtil.isNull(time)) {
             return new DateResult(DateResult.DATE_RESULT_NO_NULL, "");
         }
 
@@ -990,7 +990,7 @@ public class DateUtil {
      * @return 0今天 ,1 明天, -1异常
      */
     public static int isTomorrowDay(String timeSource) {
-        if (Tao800Util.isNull(timeSource)) {
+        if (TaoCCUtil.isNull(timeSource)) {
             return -1;
         }
         try {

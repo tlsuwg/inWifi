@@ -69,6 +69,6 @@ public abstract class FaceBaseHttpParamBuilder {
     }
 
 
-    public static  String DOMAIN = "zhe800.com";
+    public static  String DOMAIN = "/zhenCC9.com";
 }
 

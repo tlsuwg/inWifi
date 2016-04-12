@@ -114,9 +114,9 @@ public class NetworkWorker {
         HttpConnectionParams.setSoTimeout(params, SO_SOCKET_TIMEOUT);
         SchemeRegistry schemeRegistry = new SchemeRegistry();
         schemeRegistry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));
-//        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByBKS("tuan800_1.bks","BKS"), 443));
-//        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByBKS("tuan800_2.bks","BKS"), 443));
-//        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByCer("tuan8002.cer"), 443));
+//        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByBKS("TuanDD_1.bks","BKS"), 443));
+//        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByBKS("TuanDD_2.bks","BKS"), 443));
+//        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByCer("TuanDD2.cer"), 443));
 //        schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryByCer("sso2.cer"), 443));
         schemeRegistry.register(new Scheme("https", SSLCustomSocketFactory.getSocketFactoryDef(), 443));
 

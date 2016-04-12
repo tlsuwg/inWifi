@@ -15,12 +15,12 @@ public class BaseNetwork {
     public String BASE_BUY_API = "";
     public String BASE_TEST_NEW = "";
 
-    // zhe800wap页、apk下载地址、新浪、腾讯微博地址、用户反馈
-    public String TAO800_WAP = "";
+
+    public String TaoCC_WAP = "";
     public String APK_URL = "";
     public String APK_NEW_URL = "";
-    public String TAO800_SINA_WEIBO = "";
-    public String TAO800_TENCENT_WEIBO = "";
+    public String TaoCC_SINA_WEIBO = "";
+    public String TaoCC_TENCENT_WEIBO = "";
     public String FEEDBACK_URL = "";
 
     // 砸蛋介绍
@@ -178,8 +178,8 @@ public class BaseNetwork {
     // 绑定手机号
     public String PASSPORT_BIND_PHONE_HTTPS = "";
 
-    // tuan800升级提醒地址
-    public String TUAN800_SOFT_URL = "";
+    // TuanDD升级提醒地址
+    public String TuanDD_SOFT_URL = "";
 
     // ------------------------------- 积分 ---------------------------------
     // 增加积分接口

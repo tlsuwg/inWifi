@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 
 import com.hxuehh.appCore.develop.LogUtil;
-import com.hxuehh.reuse_Process_Imp.staicUtil.utils.Tao800Util;
+import com.hxuehh.reuse_Process_Imp.staicUtil.utils.TaoCCUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +48,7 @@ public class ContactsUtils {
             int index = phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
             do {
                 String phoneNumber = phones.getString(index);
-                if (Tao800Util.isMobilePhone(phoneNumber)) {
+                if (TaoCCUtil.isMobilePhone(phoneNumber)) {
                     phoneList.add(phoneNumber + "(" + contactName + ")");
                 }
             }

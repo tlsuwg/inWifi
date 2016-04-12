@@ -3,7 +3,7 @@ package com.hxuehh.reuse_Process_Imp.staicUtil.utils;
 import android.util.Log;
 
 import com.hxuehh.reuse_Process_Imp.appSetting.AppConfig;
-import com.hxuehh.reuse_Process_Imp.appSetting.UrlConfigDomain.Tao800API;
+import com.hxuehh.reuse_Process_Imp.appSetting.UrlConfigDomain.TaoAPI;
 import com.hxuehh.reuse_Process_Imp.staicUtil.netUtil.NetworkWorker;
 import com.hxuehh.reuse_Process_Imp.staicUtil.netUtil.netHttpDomain.HttpRequester;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.StringUtil;
@@ -36,7 +36,7 @@ public class SettingSwitchUtil {
     public static String taoBaoMergedNumber = ""; //淘宝用户被合并的手机号
 
     public static boolean cookie_cet;
-    public static int zhe800_h5_pj = 1;
+
 
     public static int saleSwitch = 0;// 销量开关,0关闭,1打开
 
@@ -69,31 +69,31 @@ public class SettingSwitchUtil {
 
         HttpRequester requester = new HttpRequester();
         HashMap<String, Object> params = new HashMap<String, Object>();
-        String switchKeys = "tao800.categorysite.subcategory.switch," +
-                "tao800.categorysite.filter.switch," +
-                "tao800.categorysite.brands.switch," +
-                "tao800.signin.newusergift.switch," +
-                "tao800.apprecommend.switch," +
-                "tao800.xinge.push.switch," +
+        String switchKeys = "TaoCC.categorysite.subcategory.switch," +
+                "TaoCC.categorysite.filter.switch," +
+                "TaoCC.categorysite.brands.switch," +
+                "TaoCC.signin.newusergift.switch," +
+                "TaoCC.apprecommend.switch," +
+                "TaoCC.xinge.push.switch," +
 
-                "tao800.weixin.interest.points," +
-                "tao800.weixin.interest.force.switch," +
-                "tao800.qzone.interest.points," +
-                "tao800.friend.invite.points," +
-                "tao800.taobao.tmall.sale.switch," +
+                "TaoCC.weixin.interest.points," +
+                "TaoCC.weixin.interest.force.switch," +
+                "TaoCC.qzone.interest.points," +
+                "TaoCC.friend.invite.points," +
+                "TaoCC.taobao.tmall.sale.switch," +
 
-                "tao800.taobaologin.url," +
-                "tao800.firstorder.rebate.switch," +
-                "tao800.firstorder.rebate.url," +
-                "tao800.imageexposure.statistics.switch," +
-                "tao800.handletaobaojumpfail.switch," +
-                "tao800.customdetailurl.switch," +
-                "tao800.shop.config," +
-                "tao800.exitapp.push.switch," +
-                "tao800.exitapp.push.url," +
-                "tao800.telecom.presentedtraffic.switch," +
-                "tao800.order.gift.switch," +
-                "tao800.invitefriends.switch";
+                "TaoCC.taobaologin.url," +
+                "TaoCC.firstorder.rebate.switch," +
+                "TaoCC.firstorder.rebate.url," +
+                "TaoCC.imageexposure.statistics.switch," +
+                "TaoCC.handletaobaojumpfail.switch," +
+                "TaoCC.customdetailurl.switch," +
+                "TaoCC.shop.config," +
+                "TaoCC.exitapp.push.switch," +
+                "TaoCC.exitapp.push.url," +
+                "TaoCC.telecom.presentedtraffic.switch," +
+                "TaoCC.order.gift.switch," +
+                "TaoCC.invitefriends.switch";
 
         params.put("keys", switchKeys);
         params.put("platform", "android");
@@ -101,7 +101,7 @@ public class SettingSwitchUtil {
         params.put("product", AppConfig.getInstance().PRODUCT_TAG);
         requester.setParams(params);
 
-        NetworkWorker.getInstance().post(Tao800API.getNetwork().SWITCH_SOMEONE, new NetworkWorker.ICallback() {
+        NetworkWorker.getInstance().post(TaoAPI.getNetwork().SWITCH_SOMEONE, new NetworkWorker.ICallback() {
             @Override
             public void onResponse(int status, String result) {
                 if (status != 200) {
@@ -118,44 +118,44 @@ public class SettingSwitchUtil {
             for (int i = 0, count = JArray.length(); i < count; i++) {
                 JSONObject jObj = JArray.getJSONObject(i);
                 String key = jObj.optString("key");
-                if ("tao800.categorysite.subcategory.switch".equals(key)) {
+                if ("TaoCC.categorysite.subcategory.switch".equals(key)) {
                     hotCategorySwitch = jObj.optInt("content");
                 }
-                if ("tao800.categorysite.filter.switch".equals(key)) {
+                if ("TaoCC.categorysite.filter.switch".equals(key)) {
                     categoryTopicSwitch = jObj.optInt("content");
                 }
-                if ("tao800.categorysite.brands.switch".equals(key)) {
+                if ("TaoCC.categorysite.brands.switch".equals(key)) {
                     hotBrandSwitch = jObj.optInt("content");
                 }
-                if ("tao800.signin.newusergift.switch".equals(key)) {
+                if ("TaoCC.signin.newusergift.switch".equals(key)) {
                     newUserGiftSwitch = jObj.optInt("content");
                 }
-                if ("tao800.apprecommend.switch".equals(key)) {
+                if ("TaoCC.apprecommend.switch".equals(key)) {
                     recommendSwitch = jObj.optInt("content");
                 }
-                if ("tao800.xinge.push.switch".equals(key)) {
+                if ("TaoCC.xinge.push.switch".equals(key)) {
                     xingePushSwitch = jObj.optInt("content");
                 }
 
-                if ("tao800.weixin.interest.points".equals(key)) {
+                if ("TaoCC.weixin.interest.points".equals(key)) {
                     weixinScore = jObj.optInt("content");
                 }
 
-                if ("tao800.weixin.interest.force.switch".equals(key)) {
+                if ("TaoCC.weixin.interest.force.switch".equals(key)) {
                     wxAttendSwitch = 1 == (jObj.optInt("content"));
 
                 }
 
-                if ("tao800.qzone.interest.points".equals(key)) {
+                if ("TaoCC.qzone.interest.points".equals(key)) {
                     qqSpaceScore = jObj.optInt("content");
                 }
 
-                if ("tao800.friend.invite.points".equals(key)) {
+                if ("TaoCC.friend.invite.points".equals(key)) {
                     registerScore = jObj.optInt("content");
                 }
 
                 // 销量开关
-                if ("tao800.taobao.tmall.sale.switch".equals(key)) {
+                if ("TaoCC.taobao.tmall.sale.switch".equals(key)) {
                     // saleSwitch = jObj.optInt("content");
                     boolean isOpen = false;
                     isOpen = !StringUtil.isEmpty(jObj.optString("content")) && "1".equals(jObj.optString("content"));

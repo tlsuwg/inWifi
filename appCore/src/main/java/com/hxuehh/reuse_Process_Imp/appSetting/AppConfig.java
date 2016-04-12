@@ -36,15 +36,15 @@ public class AppConfig implements Serializable {
 
 
 
-    public String CLIENT_TAG = "tao800";
-    public String PRODUCT_TAG = "tao800";
+    public String CLIENT_TAG = "TaoCC";
+    public String PRODUCT_TAG = "TaoCC";
 
     public static String PARTNER_ID = "6x0eae";
     public static String SHOW_ZIFEI = "0";
     public static String UMENG = "0";
 
 
-    public static String LOG_TAG = "zhe800_android";
+    public static String LOG_TAG = "/zhenCC9_android";
 
     public boolean LOG_ERR_FEED = AppStaticSetting.LOG_ERR_FEED == 1;
     public static boolean LOG_CLOSED = AppStaticSetting.LOG_CLOSED == 1;

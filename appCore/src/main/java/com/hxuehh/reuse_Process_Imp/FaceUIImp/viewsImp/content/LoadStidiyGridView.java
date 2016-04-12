@@ -1,4 +1,4 @@
-package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.content;//package com.tuan800.framework.dataFaceLoadView.faceUI.views.content;
+package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.content;//package com.TuanDD.framework.dataFaceLoadView.faceUI.views.content;
 //
 //import android.view.LayoutInflater;
 //import android.view.View;
@@ -6,17 +6,17 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.content;//package com.tu
 //import android.widget.ImageView;
 //import android.widget.LinearLayout;
 //
-//import com.tuan800.framework.dataFaceLoadView.faceUI.androidWrap.FaceBaseActivity_1;
-//import com.tuan800.framework.dataFaceLoadView.faceUI.progressView.viewInterfaces.LoadForViewManager;
-//import com.tuan800.framework.dataFaceLoadView.faceUI.progressView.viewInterfaces.LoadView;
-//import com.tuan800.framework.dataFaceLoadView.faceUI.views.pulltorefresh.PullToRefreshBase_1;
-//import com.tuan800.framework.dataFaceLoadView.faceUI.views.pulltorefresh.PullToRefreshBase_2;
-//import com.tuan800.framework.dataFaceLoadView.views.stickygridheaders.PullToRefreshStidiyGridView2;
-//import com.tuan800.framework.dataFaceLoadView.views.stickygridheaders.StickyGridHeadersBaseAdapterWrapper3;
-//import com.tuan800.framework.dataFaceLoadView.views.stickygridheaders.StickyGridHeadersSimpleAdapter;
-//import com.tuan800.framework.dataFaceLoadView.views.stickygridheaders.StickyGridHeadersSimpleAdapterWrapper;
-//import com.tuan800.framework.develop.FaceEvent事件处理forDlp;
-//import com.tuan800.framework.develop.FaceEvent回调输入事件forDlp;
+//import com.TuanDD.framework.dataFaceLoadView.faceUI.androidWrap.FaceBaseActivity_1;
+//import com.TuanDD.framework.dataFaceLoadView.faceUI.progressView.viewInterfaces.LoadForViewManager;
+//import com.TuanDD.framework.dataFaceLoadView.faceUI.progressView.viewInterfaces.LoadView;
+//import com.TuanDD.framework.dataFaceLoadView.faceUI.views.pulltorefresh.PullToRefreshBase_1;
+//import com.TuanDD.framework.dataFaceLoadView.faceUI.views.pulltorefresh.PullToRefreshBase_2;
+//import com.TuanDD.framework.dataFaceLoadView.views.stickygridheaders.PullToRefreshStidiyGridView2;
+//import com.TuanDD.framework.dataFaceLoadView.views.stickygridheaders.StickyGridHeadersBaseAdapterWrapper3;
+//import com.TuanDD.framework.dataFaceLoadView.views.stickygridheaders.StickyGridHeadersSimpleAdapter;
+//import com.TuanDD.framework.dataFaceLoadView.views.stickygridheaders.StickyGridHeadersSimpleAdapterWrapper;
+//import com.TuanDD.framework.develop.FaceEvent事件处理forDlp;
+//import com.TuanDD.framework.develop.FaceEvent回调输入事件forDlp;
 //import Image13lLoader;
 //import StringUtil;
 //

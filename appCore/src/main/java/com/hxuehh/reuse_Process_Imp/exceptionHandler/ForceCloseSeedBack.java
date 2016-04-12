@@ -21,7 +21,7 @@ import java.util.HashMap;
  */
 public class ForceCloseSeedBack {
 
-    private static final String FB_URL = "http://m.api.tuan800.com/mobilelog/errorlog/android";
+    private static final String FB_URL = "http://m.api.TuanDD.com/mobilelog/errorlog/android";
 
     private static ForceCloseSeedBack feedBack;
     public static ForceCloseSeedBack getInstance() {

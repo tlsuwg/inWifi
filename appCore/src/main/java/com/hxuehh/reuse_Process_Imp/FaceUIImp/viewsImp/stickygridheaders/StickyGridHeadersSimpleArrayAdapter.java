@@ -14,7 +14,7 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 // limitations under the License.
 // */
 //
-//package com.tuan800.framework.dataFaceLoadView.views.stickygridheaders;
+//package com.TuanDD.framework.dataFaceLoadView.views.stickygridheaders;
 //
 //import android.app.Activity;
 //import android.content.Context;
@@ -29,9 +29,9 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //import android.widget.TextView;
 //
 //import Analytics;
-//import com.tuan800.framework.app.devInfo.ScreenUtil;
-//import com.tuan800.framework.dataFaceLoadView.faceUI.views.ViewKeys;
-//import com.tuan800.framework.develop.LogUtil;
+//import com.TuanDD.framework.app.devInfo.ScreenUtil;
+//import com.TuanDD.framework.dataFaceLoadView.faceUI.views.ViewKeys;
+//import com.TuanDD.framework.develop.LogUtil;
 //import Image13lLoader;
 //
 //import SuApplication;
@@ -40,7 +40,7 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //import AnalyticsInfo;
 //import DateUtil;
 //import SignSellTipUtil;
-//import Tao800Util;
+//import TaoCCUtil;
 //
 //
 //import java.util.Arrays;
@@ -227,15 +227,15 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //        }
 //
 //        holder.tv_item_branddetail.setText(deal.title);
-//        holder.tv_deal_price.setText("￥" + Tao800Util.getPrice(deal.price));
-//        Tao800Util.setPaintFlags(holder.tv_deal_orginal_price);
-//        holder.tv_deal_orginal_price.setText("￥" + Tao800Util.getPrice(deal.list_price));
+//        holder.tv_deal_price.setText("￥" + TaoCCUtil.getPrice(deal.price));
+//        TaoCCUtil.setPaintFlags(holder.tv_deal_orginal_price);
+//        holder.tv_deal_orginal_price.setText("￥" + TaoCCUtil.getPrice(deal.list_price));
 //        if (deal.isBackIntegration) {
 //            holder.tv_deal_credits.setText("+" + String.valueOf(getScore(deal)) + "积分");
 //        } else {
 //            holder.tv_deal_credits.setText("");
 //        }
-//        holder.zhe.setText(Tao800Util.getDiscount(deal.price, deal.list_price) + "折");
+//        holder.zhe.setText(TaoCCUtil.getDiscount(deal.price, deal.list_price) + "折");
 //     /*  String total= (deal.sales_count+"").trim();
 //        if(total.length()>=5){
 //          String wprice=total.substring(4);
@@ -243,7 +243,7 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //
 //        }*/
 //
-//        holder.saletotal.setText("已售" + Tao800Util.getSalesCount(deal.sales_count) + "件");
+//        holder.saletotal.setText("已售" + TaoCCUtil.getSalesCount(deal.sales_count) + "件");
 //        if (deal.isBaoYou) {
 //            holder.postage.setText("包邮");
 //        } else {
@@ -254,15 +254,15 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //
 //      /*  holder.mDealPriceTv.setVisibility(View.VISIBLE);
 //        holder.mDealDiscountTv.setVisibility(View.VISIBLE);
-//        holder.mDealPriceTv.setText("￥" + Tao800Util.getPrice(price));
+//        holder.mDealPriceTv.setText("￥" + TaoCCUtil.getPrice(price));
 //
-//        Tao800Util.setPaintFlags(holder.mDealOrginalPriceTv);
+//        TaoCCUtil.setPaintFlags(holder.mDealOrginalPriceTv);
 //
-//        String discount = Tao800Util.getDiscount(price, list_price);
+//        String discount = TaoCCUtil.getDiscount(price, list_price);
 //        if (!discount.equals("") && !discount.equals("10.0")) {
 //            holder.mDealOrginalPriceTv.setVisibility(View.VISIBLE);
-//            holder.mDealOrginalPriceTv.setText("￥" + Tao800Util.getPrice(list_price));
-//            holder.mDealDiscountTv.setText(Tao800Util.getDiscount(price, list_price) + "折");
+//            holder.mDealOrginalPriceTv.setText("￥" + TaoCCUtil.getPrice(list_price));
+//            holder.mDealDiscountTv.setText(TaoCCUtil.getDiscount(price, list_price) + "折");
 //        } else {
 //            holder.mDealOrginalPriceTv.setVisibility(View.GONE);
 //            holder.mDealDiscountTv.setText("热卖");
@@ -389,16 +389,16 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //            }
 //        }
 //        holder.tv_item_branddetail.setText(deal.title);
-//        holder.tv_deal_price.setText("￥" + Tao800Util.getPrice(deal.price));
-//        Tao800Util.setPaintFlags(holder.tv_deal_orginal_price);
-//        holder.tv_deal_orginal_price.setText("￥" + Tao800Util.getPrice(deal.list_price));
-//        holder.tv_deal_credits.setText(Tao800Util.getDiscount(deal.price, deal.list_price) + "折");
+//        holder.tv_deal_price.setText("￥" + TaoCCUtil.getPrice(deal.price));
+//        TaoCCUtil.setPaintFlags(holder.tv_deal_orginal_price);
+//        holder.tv_deal_orginal_price.setText("￥" + TaoCCUtil.getPrice(deal.list_price));
+//        holder.tv_deal_credits.setText(TaoCCUtil.getDiscount(deal.price, deal.list_price) + "折");
 //       /* if (deal.isBackIntegration) {
 //            holder.tv_deal_credits.setText("+" + String.valueOf(getScore(deal)) + "积分");
 //        } else {
 //            holder.tv_deal_credits.setText("");
 //        }*/
-//        holder.zhe.setText(Tao800Util.getDiscount(deal.price, deal.list_price) + "折");
+//        holder.zhe.setText(TaoCCUtil.getDiscount(deal.price, deal.list_price) + "折");
 //     /*  String total= (deal.sales_count+"").trim();
 //        if(total.length()>=5){
 //          String wprice=total.substring(4);
@@ -406,7 +406,7 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //
 //        }*/
 //
-//        holder.saletotal.setText("已售" + Tao800Util.getSalesCount(deal.sales_count) + "件");
+//        holder.saletotal.setText("已售" + TaoCCUtil.getSalesCount(deal.sales_count) + "件");
 //        if (deal.isBaoYou) {
 //            holder.postage.setText("包邮");
 //        } else {
@@ -417,15 +417,15 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //
 //      /*  holder.mDealPriceTv.setVisibility(View.VISIBLE);
 //        holder.mDealDiscountTv.setVisibility(View.VISIBLE);
-//        holder.mDealPriceTv.setText("￥" + Tao800Util.getPrice(price));
+//        holder.mDealPriceTv.setText("￥" + TaoCCUtil.getPrice(price));
 //
-//        Tao800Util.setPaintFlags(holder.mDealOrginalPriceTv);
+//        TaoCCUtil.setPaintFlags(holder.mDealOrginalPriceTv);
 //
-//        String discount = Tao800Util.getDiscount(price, list_price);
+//        String discount = TaoCCUtil.getDiscount(price, list_price);
 //        if (!discount.equals("") && !discount.equals("10.0")) {
 //            holder.mDealOrginalPriceTv.setVisibility(View.VISIBLE);
-//            holder.mDealOrginalPriceTv.setText("￥" + Tao800Util.getPrice(list_price));
-//            holder.mDealDiscountTv.setText(Tao800Util.getDiscount(price, list_price) + "折");
+//            holder.mDealOrginalPriceTv.setText("￥" + TaoCCUtil.getPrice(list_price));
+//            holder.mDealDiscountTv.setText(TaoCCUtil.getDiscount(price, list_price) + "折");
 //        } else {
 //            holder.mDealOrginalPriceTv.setVisibility(View.GONE);
 //            holder.mDealDiscountTv.setText("热卖");
@@ -456,7 +456,7 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //        if (SignSellTipUtil.sign(deal)) {
 //            SignSellTipUtil.getDealSellTipCount(deal.id);
 //            showRemindView(clickView, imageView);
-//            Tao800Util.showShortToast(mContext, "设置成功,开抢5分钟前提示你哦～");
+//            TaoCCUtil.showShortToast(mContext, "设置成功,开抢5分钟前提示你哦～");
 //        } else {
 //            clickView.setClickable(true);
 //        }
@@ -465,7 +465,7 @@ package com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.stickygridheaders;///*
 //    private void tipCancleAuction(Goods deal, final View clickView, final ImageView imageView) {
 //        if (SignSellTipUtil.remove(deal)) {
 //            hideRemindView(clickView, imageView);
-//            Tao800Util.showShortToast(mContext, "取消提醒");
+//            TaoCCUtil.showShortToast(mContext, "取消提醒");
 //        } else {
 //            clickView.setClickable(true);
 //        }

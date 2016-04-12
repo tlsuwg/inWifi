@@ -35,7 +35,7 @@ public class SuFileInfo {
     // public static String LinkMan_Sound;// 文件
 
 
-    public String[] sysnames = {".tuan800Obj"};
+    public String[] sysnames = {".TuanDDObj"};
 
     public String[] SD_SYS_names = {"._Image"};
 

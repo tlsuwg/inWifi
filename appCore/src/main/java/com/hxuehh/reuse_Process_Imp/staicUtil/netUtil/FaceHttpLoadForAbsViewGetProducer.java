@@ -106,9 +106,6 @@ public class FaceHttpLoadForAbsViewGetProducer {
 //            requester.getRequestHeaders().put("If-Modified-Since", lastModified);
 //        }
 
-        if(mLoadParameters.isSetZhe800Filter()){
-            mLoadParameters.setZhe800FilterParm();
-        }
 
         if(mLoadParameters.isSetUserInfo()){
             mLoadParameters.setUserInfo();

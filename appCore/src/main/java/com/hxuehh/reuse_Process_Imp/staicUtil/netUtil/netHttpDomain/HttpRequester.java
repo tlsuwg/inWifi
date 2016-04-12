@@ -171,7 +171,7 @@ public class HttpRequester {
     }
 
     private void addPlatformMsg(HttpUriRequest request) {
-        request.addHeader("X-Tuan800-Platform", "Android");
+        request.addHeader("X-TuanDD-Platform", "Android");
     }
 
     private void addUserAgent(HttpUriRequest request) {

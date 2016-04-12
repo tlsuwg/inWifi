@@ -133,13 +133,13 @@ public abstract class AbstractAnalyticsInfo implements IAnalyticsInfo {
     protected abstract String getLatitude();
 
     /**
-     * Get tuan800 user id
+     * Get TuanDD user id
      * @return
      */
     protected abstract String getUserId();
 
     /**
-     * Get tuan800 city id
+     * Get TuanDD city id
      * @return
      */
     protected abstract String getCityId();

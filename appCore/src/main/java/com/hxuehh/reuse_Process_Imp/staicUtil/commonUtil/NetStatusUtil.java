@@ -31,7 +31,7 @@ public class NetStatusUtil {
     public static boolean isWifiAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) SuApplication.getInstance().getBaseContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivityManager == null) {
-//                Tao800Util.showTaoToast(context, "无法连接网络");
+//                TaoCCUtil.showTaoToast(context, "无法连接网络");
             return false;
         }
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -43,7 +43,7 @@ public class NetStatusUtil {
     public static int getNetType() {
         ConnectivityManager connectivityManager = (ConnectivityManager) SuApplication.getInstance().getBaseContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivityManager == null) {
-//                Tao800Util.showTaoToast(context, "无法连接网络");
+//                TaoCCUtil.showTaoToast(context, "无法连接网络");
             return -1;
         }
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -59,7 +59,7 @@ public class NetStatusUtil {
             ConnectivityManager connectivity = (ConnectivityManager) SuApplication.getInstance()
                     .getSystemService(Context.CONNECTIVITY_SERVICE);
             if (connectivity == null) {
-//                Tao800Util.showTaoToast(context, "无法连接网络");
+//                TaoCCUtil.showTaoToast(context, "无法连接网络");
                 return false;
             }
 
@@ -74,7 +74,7 @@ public class NetStatusUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        Tao800Util.showTaoToast(context, "无法连接网络");
+//        TaoCCUtil.showTaoToast(context, "无法连接网络");
         return false;
     }
 

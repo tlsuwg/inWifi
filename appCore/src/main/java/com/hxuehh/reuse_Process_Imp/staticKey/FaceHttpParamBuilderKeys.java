@@ -116,7 +116,7 @@ public class FaceHttpParamBuilderKeys extends FaceBaseHttpParamBuilder{
     public static final String PARA_POSTCODE = "post_code";
 
     //登录domain
-    public static  String DOMAIN = "zhe800.com";
+    public static  String DOMAIN = "/zhenCC9.com";
     public static final String IDS = "ids";
     public static int PAGE_EVERDAT =10;
     public static String SearchKey="search_key";
@@ -126,7 +126,7 @@ public class FaceHttpParamBuilderKeys extends FaceBaseHttpParamBuilder{
     public static String IM_token="token";
     public static String IM_idType="idType";
 
-//    http://192.168.90.62:8080/com.tuan800.im.userCenter/im/user/loginUser?userjid=suwg@im_test&password=3542194
+//    http://192.168.90.62:8080/com.TuanDD.im.userCenter/im/user/loginUser?userjid=suwg@im_test&password=3542194
 
 
 
@@ -140,24 +140,8 @@ public class FaceHttpParamBuilderKeys extends FaceBaseHttpParamBuilder{
 
 
 
-    boolean isSetZhe800Filter;
 
-    public void setZhe800Filter() {
-        isSetZhe800Filter=true;
-        setZhe800FilterParm();
-    }
 
-    public boolean isSetZhe800Filter() {
-        return isSetZhe800Filter;
-    }
-
-    public void setZhe800FilterParm() {
-        if (headers == null)
-            headers = new HashMap<String, String>();
-//        headers.put("X-Zhe800out", Zhe800Filter.getOutCount());
-//        headers.put("X-Zhe800filter", Zhe800Filter.getFilterStr());
-//        headers.put("X-Zhe800userid", Session2.isLogin() ? Session2.getLoginUser().getId() : "");
-    }
 
     Map<String, String> headers;
     public Map<String, String> getHead() {
@@ -176,8 +160,8 @@ public class FaceHttpParamBuilderKeys extends FaceBaseHttpParamBuilder{
     }
 
     public void setUserInfo(){
-//        put(ParamBuilder.USER_TYPE, Tao800Util.isOldUesr() ? 1 : 0);
-//        put(ParamBuilder.USER_ROLE, Tao800Util.getUserRole());
+//        put(ParamBuilder.USER_TYPE, TaoCCUtil.isOldUesr() ? 1 : 0);
+//        put(ParamBuilder.USER_ROLE, TaoCCUtil.getUserRole());
 //        put(ParamBuilder.STUDENT, (PreferencesUtils.getBoolean(IntentBundleFlag.ISSTUDENT) ? 1 : 0));
     }
 

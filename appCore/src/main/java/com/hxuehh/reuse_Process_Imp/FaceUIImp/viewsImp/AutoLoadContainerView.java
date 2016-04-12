@@ -39,7 +39,7 @@ import com.hxuehh.reuse_Process_Imp.FaceUIImp.viewsImp.content.LoadStaggeredGrid
 import com.hxuehh.appCore.develop.DevRunningTime;
 import com.hxuehh.appCore.develop.FaceEventCallBackINforDlp;
 import com.hxuehh.appCore.develop.FaceEventInforDlp;
-import com.hxuehh.reuse_Process_Imp.staicUtil.utils.Tao800Util;
+import com.hxuehh.reuse_Process_Imp.staicUtil.utils.TaoCCUtil;
 
 //import com.hxuehh.rebirth.stickygrid.StickyGridHeadersSimpleArrayAdapter;
 
@@ -391,7 +391,7 @@ public class AutoLoadContainerView extends FaceGetMainViewImp {
                         mWarnView.setLoadedOk();
                     }
                     //setLoadStats(WarnView.LOADED_OK);
-                    if (!isLoadedData && (Tao800Util.isEmpty(mAllData) && !noDataViewGone)) {
+                    if (!isLoadedData && (TaoCCUtil.isEmpty(mAllData) && !noDataViewGone)) {
                         if (showNoDataView) {
                             //setLoadStats(WarnView.LOADED_NO_DATA);
                             if (viewType == ViewKeys.AutoView_HeadGViewOnlyListImHis) {

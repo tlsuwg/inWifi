@@ -15,7 +15,7 @@
  *******************************************************************************/
 package com.hxuehh.reuse_Process_Imp.image.universalimageloader.core.assist;
 
-import com.hxuehh.reuse_Process_Imp.staicUtil.utils.Tao800Util;
+import com.hxuehh.reuse_Process_Imp.staicUtil.utils.TaoCCUtil;
 
 /**
  * Presents the reason why image loading and displaying was failed
@@ -79,7 +79,7 @@ public class FailReason {
 
     @Override
     public String toString() {
-        if (!Tao800Util.isEmpty(cause)) {
+        if (!TaoCCUtil.isEmpty(cause)) {
             return this.type + "  " + this.cause.toString();
         }else {
             return null;
