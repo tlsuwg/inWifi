@@ -2,11 +2,15 @@ package com.hxuehh.rebirth.app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.telephony.SmsMessage;
 
 import com.hxuehh.appCore.aidl.BytesClass;
+import com.hxuehh.appCore.develop.Su;
 import com.hxuehh.appCore.faceFramework.faceDomain.interfacesDomain.commonInterface.FaceCommCallBack;
 import com.hxuehh.rebirth.all.FaceAc.ServerDeviceServiceStatusAc;
 import com.hxuehh.rebirth.all.domain.DeviceInfo;
+import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.DateUtil;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.NetStatusUtil;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.NotifiationUtil;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.StringUtil;
@@ -24,6 +28,8 @@ import com.hxuehh.reuse_Process_Imp.staticKey.UDPTCPkeys;
 public class SuLongServiceFaceCallBackProxy implements FaceCommCallBack {
 
     public static final int NetChange = 2;
+    public static final int NetMSG = 3;
+    public static final int NetPhone = 4;
     Context mCon;
 
     public SuLongServiceFaceCallBackProxy() {
@@ -33,7 +39,7 @@ public class SuLongServiceFaceCallBackProxy implements FaceCommCallBack {
 
     @Override
     public boolean callBack(Object... ts) {
-        mCon= (Context) ts[0];;
+        mCon= (Context) ts[0];
         Intent in = (Intent) ts[1];
         BytesClass mBytesClass = (BytesClass) in.getSerializableExtra(IntentKeys.obj_ClassKeyByte);
         if (mBytesClass != null) {
@@ -129,6 +135,26 @@ public class SuLongServiceFaceCallBackProxy implements FaceCommCallBack {
                     break;
                 }
             }
+            break;
+
+            case NetMSG:{
+                {
+                    Bundle bundle = in.getExtras();
+                    SmsMessage msg = null;
+                    if (null != bundle) {
+                        Object[] smsObj = (Object[]) bundle.get("pdus");
+                        for (Object object : smsObj) {
+                            msg = SmsMessage.createFromPdu((byte[]) object);
+                            String number=msg.getOriginatingAddress();
+                            String msginfo=msg.getDisplayMessageBody();
+                            String time= DateUtil.getCurrentTime();
+                            Su.log("number" + number + ";" + msginfo + ";" + time);
+                        }
+                    }
+                }
+            }
+            break;
+            case NetPhone:{}
             break;
         }
     }
