@@ -10,9 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/appCore" />
-            <option value="$PROJECT_DIR$/apprebirth" />
-            <option value="$PROJECT_DIR$/findwifi" />
-            <option value="$PROJECT_DIR$/vitamio" />
+            <option value="$PROJECT_DIR$/appwifi" />
           </set>
         </option>
       </GradleProjectSettings>

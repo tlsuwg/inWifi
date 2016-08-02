@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">suCore</string>
+    <string name="app_name">findwifi</string>
     <string name="admin_descriptio">需要使用此功能才能进行“锁屏”操作</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

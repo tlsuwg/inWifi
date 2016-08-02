@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <com.hxuehh.rebirth.all.FaceView.FTDIusb.BeCon40DataItemView
+            android:id="@+id/be_con40_data_item_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.hxuehh.rebirth.all.FaceView.FTDIusb.BeCon40DataItemView
+            android:id="@+id/be_con40_data_item_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.hxuehh.rebirth.all.FaceView.FTDIusb.BeCon40DataItemView
+            android:id="@+id/be_con40_data_item_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.hxuehh.rebirth.all.FaceView.FTDIusb.BeCon40DataItemView
+            android:id="@+id/be_con40_data_item_view_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+</LinearLayout>
