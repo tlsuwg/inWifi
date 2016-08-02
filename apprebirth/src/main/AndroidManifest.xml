@@ -431,12 +431,7 @@
         </receiver>
 
 
-        <receiver android:name=".app.SmsReciver" >
-            <intent-filter android:priority="2147483647">
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
-
+     
 
         <!--<activity-->
         <!--android:name=".capacity.OnTopActivity"-->

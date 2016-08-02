@@ -1,1 +1,1 @@
-include ':appCore', ':apprebirth', ':vitamio'
+include ':appCore', ':apprebirth', ':vitamio', ':findwifi'
