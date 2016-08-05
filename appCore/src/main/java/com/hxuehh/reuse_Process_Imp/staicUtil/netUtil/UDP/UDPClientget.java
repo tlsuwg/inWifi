@@ -43,7 +43,7 @@ public class UDPClientget {
 
         if(datagramSocket==null)return;
         byte bs[] = new byte[bytesize];
-        mUDPMessageGetListener.callBack();//另外线程发送了 标记线程已经运行起来
+        mUDPMessageGetListener.callBack();////把自己整蒙圈的  另外线程发送了 标记线程已经运行起来
         while (isRun) {
             pack = new DatagramPacket(bs, bs.length);
             try {
@@ -60,7 +60,6 @@ public class UDPClientget {
                 if(isRun)
                 e.printStackTrace();
             }
-
         }
     }
 

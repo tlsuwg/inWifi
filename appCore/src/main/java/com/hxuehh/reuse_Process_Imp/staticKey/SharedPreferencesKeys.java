@@ -10,7 +10,7 @@ public class SharedPreferencesKeys {
     public static final int device_used_type_only_server =1;//只是服务器
     public static final int device_used_type_server_Device=4;//标准服务器+设备
     public static final int device_used_type_device=3;//不是服务器 但是需要一直和谁连接
-    public static final int device_used_type_client=2;//控制器
+    public static final int device_used_type_client=2; //控制器
 
 
 

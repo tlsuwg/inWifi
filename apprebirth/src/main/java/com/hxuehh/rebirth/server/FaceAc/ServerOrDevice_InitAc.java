@@ -351,8 +351,6 @@ public class ServerOrDevice_InitAc extends FaceBaseActivity_1 {
         ViewKeys.addIntoLin(R.id.select_title_lin, mTe, getFaceContext());
         mFaceCommCallBackSucc.callBack(status + 1);
 
-
-
     }
 
 

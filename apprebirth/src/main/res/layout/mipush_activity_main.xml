@@ -333,23 +333,7 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:id="@+id/sunshaoqing_lin"
-        android:visibility="gone"
-        android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:visibility="gone"
-            android:id="@+id/sunshaoqing_change"
-            android:layout_gravity="center"/>
-
-
-
-    </LinearLayout>
 
 
     <ScrollView

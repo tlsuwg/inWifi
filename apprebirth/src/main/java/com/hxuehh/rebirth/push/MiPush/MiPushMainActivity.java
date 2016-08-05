@@ -67,7 +67,6 @@ public class MiPushMainActivity extends FaceBaseActivity_1 {
 //            FaceCommCallBackforgetMiRed};
 
 
-    Button sunshaoqing_change;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,12 +77,7 @@ public class MiPushMainActivity extends FaceBaseActivity_1 {
         logView = (TextView) findViewById(R.id.log);
         mEditTextForImei= (EditText) findViewById(R.id.imei_to);
         mEditTextForImei.setText(SharedPreferencesUtils.getString(SharedPreferencesKeys.Mi_Imei_Phone_loc));
-        sunshaoqing_change= (Button) findViewById(R.id.sunshaoqing_change);
 
-        if(AppStaticSetting.isSunShaoQingPro){
-            findViewById(R.id.suwg_lin).setVisibility(View.GONE);
-            findViewById(R.id.sunshaoqing_lin).setVisibility(View.VISIBLE);
-        }
 
         // 设置别名
         findViewById(R.id.set_alias).setOnClickListener(new OnClickListener() {
@@ -334,48 +328,9 @@ public class MiPushMainActivity extends FaceBaseActivity_1 {
         refreshLogInfo();
         String info = SharedPreferencesUtils.getString(SharedPreferencesKeys.MIregID);
         Su.logIM(info);
-        checkRegID();
     }
 
-    private void checkRegID() {
-        String info = SharedPreferencesUtils.getString(SharedPreferencesKeys.MIregID);
 
-        if(StringUtil.isEmpty(info)) {
-            if (AppStaticSetting.isSunShaoQingPro) {
-                getHandler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        checkRegID();
-                    }
-                }, 2000);
-            }
-        }else{
-            sunshaoqing_change.setVisibility(View.VISIBLE);
-
-            String showInfo=null;
-            if(StringUtil.isEmpty(SharedPreferencesUtils.getString(SharedPreferencesKeys.SunShaoQingRegisterSucceed))){
-                showInfo="未完成注册，可跳转到注册页面";
-                sunshaoqing_change.setOnClickListener(new OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent in=new Intent(getFaceContext(), ApFindActivity.class);
-                        getFaceContext().startActivity(in);
-                    }
-                });
-            }else{
-                showInfo="已经成功,"+SharedPreferencesUtils.getString(SharedPreferencesKeys.SunShaoQingphoneNumberForServer)+"可再次，（删除）。";
-                sunshaoqing_change.setOnClickListener(new OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        SharedPreferencesUtils.remove(SharedPreferencesKeys.SunShaoQingRegisterSucceed);
-                        Intent in=new Intent(getFaceContext(), ApFindActivity.class);
-                        getFaceContext().startActivity(in);
-                    }
-                });
-            }
-            sunshaoqing_change.setText(showInfo);
-        }
-    }
 
     public void refreshLogInfo() {
         String AllLog = "";

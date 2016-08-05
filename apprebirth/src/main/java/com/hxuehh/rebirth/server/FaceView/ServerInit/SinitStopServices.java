@@ -64,7 +64,7 @@ public class SinitStopServices extends FaceGetMainViewImp implements ProViewForS
         getFaceContext().getHandler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                mProView.setOk("已停止",  false);
+                mProView.setOk("清理完成",  false);
                 faceCommCallBackOK.callBack(status + 1);
             }
         }, (!oo2 && !oo1 ? 500 : 3000));

@@ -55,17 +55,17 @@
 
     <uses-feature android:name="android.hardware.camera" />
 
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" ></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" ></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
-    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
@@ -99,7 +99,6 @@
     <application
         android:name=".app.ProApplication"
         android:allowBackup="true"
-        android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -148,6 +147,8 @@
         </service>
 
 
+
+
         <activity
             android:name="com.hxuehh.rebirth.all.FaceAc.InitAc"
             android:configChanges="keyboardHidden|orientation"
@@ -172,13 +173,6 @@
                 android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
                 android:resource="@xml/accessory_filter"></meta-data>
         </activity>
-
-        <activity
-            android:name="com.hxuehh.appCore.develop.DevShowErrAc"
-            android:configChanges="keyboardHidden|orientation"
-            android:process=":showErr"
-            android:screenOrientation="portrait"></activity>
-
 
         <activity
             android:name="com.hxuehh.rebirth.all.FaceAc.SelectDeviceTypeAc"
@@ -385,6 +379,15 @@
         <activity
             android:name=".apFind.FaceAc.ApFindActivity"
             android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <!--捕获异常-->
+        <activity
+            android:name="com.hxuehh.appCore.develop.DevShowErrAc"
+            android:configChanges="keyboardHidden|orientation"
+            android:process=":showErr"
             android:screenOrientation="portrait"></activity>
 
 

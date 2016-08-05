@@ -35,7 +35,8 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:text="需要两部手机：废旧的Android手机作为被控制设备，您的日常手机作为遥控。\n废旧手机，变废为宝，做视频监控，做小夜灯，做物联网控制核心......快来体验吧" />
+            android:text="需要两部手机：废旧的Android手机作为被控制设备，您的日常手机作为遥控。
+            \n废旧手机，变废为宝，做视频监控，做小夜灯，做物联网控制核心......快来体验吧" />
 
         <LinearLayout
             android:layout_width="match_parent"

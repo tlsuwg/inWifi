@@ -32,12 +32,6 @@ public class InitAc extends FaceHitBaseActivity_2 {
         @Override
         public boolean callBack(Object[] t) {
             Intent in = (Intent) t[0];
-
-            if(AppStaticSetting.isSunShaoQingPro){//如果是孙绍清
-                IntentChangeManger.jumpTo(getFaceContext(), IntentChangeManger.flag_device_mi_test, true);
-                return false;
-            }
-
             int key = SharedPreferencesUtils.getInteger(SharedPreferencesKeys.device_used_type);
             switch (key) {
                 case SharedPreferencesKeys.device_used_type_noSet:

@@ -83,12 +83,16 @@ public abstract class DeviceCapacityBase<F> implements Serializable, TypeIDable,
     public static final int Type_MediaPlayer = 4;//语音播放
     public static final int Type_RecordFile = 5;//采集声音
     public static final int Type_Photograph = 6;//拍照
+
     @Deprecated
     public static final int Type_VideoFile = 7;//录像 合并到11
+
     public static final int Type_P2P_Sound_Chat = 8;//在线聊天
     public static final int Type_P2P_Video_Chat = 9;//在线视频聊天
+
     @Deprecated
     public static final int Type_Video_Surveillance_File = 10;//本地监控  合并到11
+
     public static final int Type_Video_Surveillance_Sense = 11;//录像 ，本地移动侦测
     @Deprecated
     public static final int Type_Loc_Geographic_auto = 12;//位置变化采集
@@ -123,8 +127,8 @@ public abstract class DeviceCapacityBase<F> implements Serializable, TypeIDable,
     public static final int Type_Add_Pluginy_IOIn = 35;//IO变化
 
 
-//    //
-//    public static final int Type_LockScreen = 31;//锁屏
+    public static final int Type_SU = 32;//超级权限
+
 //    public static final int Type_Add_PluginInfraredBody = 32;//人体红外探测
 //    public static final int Type_Add_Pluginy_Temperature  = 33;//变化
 //    public static final int Type_Add_Pluginy_Humidity  = 34;//变化
@@ -132,6 +136,8 @@ public abstract class DeviceCapacityBase<F> implements Serializable, TypeIDable,
 
 
     public static final int Type_Client_AccelerationSensor = 1000;
+
+
 
     static final String[] allName = new String[]{
 //            1-5

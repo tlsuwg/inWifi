@@ -81,9 +81,10 @@ public class UDPServerFinder extends RunningStatus {
 
 
     private void getUDP() {
-        if (mget == null) {
+        if (mget == null) {//把自己整蒙圈的
             setStatus(RunningStatus.Init, null);
-            if (serviceTyp == AbService_TCPLongLink_.AbService_TCPLongLink_Client || serviceTyp == AbService_TCPLongLink_.AbService_TCPLongLink_Device) {
+            if (serviceTyp == AbService_TCPLongLink_.AbService_TCPLongLink_Client
+                    || serviceTyp == AbService_TCPLongLink_.AbService_TCPLongLink_Device) {
                 mget = new UDPClientget(UDPTCPkeys.Device_Client_broadcastPort, getUDPcall, 10);
             } else {
                 mget = new UDPClientget(UDPTCPkeys.Main_broadcastPort, getUDPcall, 10);

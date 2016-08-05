@@ -105,7 +105,7 @@ public class VoiceSynthesisPlay extends DeviceCapacityBase {
         if(!StringUtil.isEmpty(name)){
             this.voicer=name;
         }
-        SpeechUtility.createUtility(SuApplication.getInstance(), "appid=56264687");
+        SpeechUtility.createUtility(SuApplication.getInstance(), "appid=57a1d053");
         mTts = SpeechSynthesizer.createSynthesizer(SuApplication.getInstance(), mInitListener);
     }
 
