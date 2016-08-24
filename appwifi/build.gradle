@@ -52,6 +52,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':appCore')
+
     compile files('libs/gson-2.2.4.jar')
     compile files('libs/MiPush_SDK_Client_3_0_3.jar')
 }

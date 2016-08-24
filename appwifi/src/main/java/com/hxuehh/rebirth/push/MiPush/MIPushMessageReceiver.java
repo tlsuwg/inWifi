@@ -18,14 +18,7 @@ import com.google.gson.Gson;
 import com.hxuehh.appCore.app.SuApplication;
 import com.hxuehh.appCore.develop.Su;
 import com.hxuehh.rebirth.R;
-import com.hxuehh.rebirth.all.domain.DeviceInfo;
 import com.hxuehh.rebirth.apFind.FaceAc.ApFindActivity;
-import com.hxuehh.rebirth.push.MiPush.handerMessage.MiPushHandlerManger;
-import com.hxuehh.rebirth.suMessage.domain.MidMessage;
-import com.hxuehh.rebirth.suMessage.domain.MidMessageCMDKeys;
-import com.hxuehh.rebirth.suMessage.domain.imp.MidMessageBack_2;
-import com.hxuehh.rebirth.suMessage.domain.imp.MidMessageBack_Err_3;
-import com.hxuehh.rebirth.suMessage.domain.imp.MidMessageP2POrder_3;
 import com.hxuehh.reuse_Process_Imp.appSetting.AppStaticSetting;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.StringUtil;
 import com.hxuehh.reuse_Process_Imp.staicUtil.devInfo.DeviceUtil;
@@ -93,31 +86,6 @@ public class MIPushMessageReceiver extends PushMessageReceiver {
             if (AppStaticSetting.isSunShaoQingPro) {//孙绍清的东西
                 if (baseInfo.containsKey("android_device")) {
                     SuApplication.getInstance().sendBroadcast(new Intent(ApFindActivity.SunShaoQingApDeviceRegsetInServerOK));
-                }
-            } else {
-                String cmd = (String) baseInfo.get(MidMessage.Key_CMD);
-                int cmdint = 0;
-                if (cmd != null) {
-                    cmdint = Integer.parseInt(cmd);
-                }
-                boolean isOrder = false;
-                MidMessage mid = null;
-                if (cmdint == 1 || cmdint == 0) {
-                    if (baseInfo.containsKey(MidMessage.Key_ErrInfo)) {
-                        mid = new MidMessageBack_Err_3();
-                    } else {
-                        mid = new MidMessageBack_2();
-                    }
-                } else {
-                    String from = (String) baseInfo.get(MidMessage.Key_DeviceID);
-                    mid = new MidMessageP2POrder_3(cmdint, from);
-                    isOrder = true;
-                }
-                mid.setOutMap(baseInfo);
-                if (isOrder) {
-                    MiPushHandlerManger.getInstance().addOrder(mid);
-                } else {
-                    MiPushHandlerManger.getInstance().resCallBack(mid);
                 }
             }
         }
@@ -239,11 +207,6 @@ public class MIPushMessageReceiver extends PushMessageReceiver {
                 mRegId = cmdArg1;
                 SharedPreferencesUtils.putString(SharedPreferencesKeys.MIregID, mRegId);
 
-                MidMessageP2POrder_3 midMessageOrder_2 = new MidMessageP2POrder_3(MidMessageCMDKeys.MidMessageCMD_P2P_Regist, DeviceInfo.getInstens().getSU_UUID());
-                midMessageOrder_2.putKeyValue(MidMessage.Key_Mi_Reg_ID, mRegId);
-                midMessageOrder_2.putKeyValue(MidMessage.Key_Imei, DeviceUtil.getimei());
-                midMessageOrder_2.setIsSendToNet(true);
-                MiPushHandlerManger.getInstance().addOrder(midMessageOrder_2);
 
                 String de = DeviceUtil.getimei();
                 if (!StringUtil.isEmpty(de)) {

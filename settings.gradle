@@ -1,1 +1,1 @@
-include ':appCore', ':appwifi'
+include ':appwifi', ':appCore'

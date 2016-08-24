@@ -15,12 +15,7 @@ import com.hxuehh.appCore.develop.Su;
 import com.hxuehh.appCore.faceFramework.faceDomain.interfacesDomain.commonInterface.FaceCommCallBack;
 import com.hxuehh.appCore.faceFramework.faceUI.androidWrap.FaceBaseActivity_1;
 import com.hxuehh.rebirth.R;
-import com.hxuehh.rebirth.all.domain.DeviceInfo;
 import com.hxuehh.rebirth.apFind.FaceAc.ApFindActivity;
-import com.hxuehh.rebirth.push.MiPush.handerMessage.MiPushHandlerManger;
-import com.hxuehh.rebirth.suMessage.domain.MidMessage;
-import com.hxuehh.rebirth.suMessage.domain.MidMessageCMDKeys;
-import com.hxuehh.rebirth.suMessage.domain.imp.MidMessageP2POrder_3;
 import com.hxuehh.reuse_Process_Imp.appSetting.AppStaticSetting;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.DialogUtil;
 import com.hxuehh.reuse_Process_Imp.staicUtil.commonUtil.StringUtil;
@@ -269,37 +264,10 @@ public class MiPushMainActivity extends FaceBaseActivity_1 {
 
 
 
-        findViewById(R.id.register).setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                MidMessageP2POrder_3 midMessageOrder_2 = new MidMessageP2POrder_3(MidMessageCMDKeys.MidMessageCMD_P2P_Regist, DeviceInfo.getInstens().getSU_UUID());
-                midMessageOrder_2.putKeyValue(MidMessage.Key_Mi_Reg_ID, SharedPreferencesUtils.getString(SharedPreferencesKeys.MIregID));
-                midMessageOrder_2.putKeyValue(MidMessage.Key_Imei, DeviceUtil.getimei());
-                midMessageOrder_2.setIsSendToNet(true);
-                MiPushHandlerManger.getInstance().addOrder(midMessageOrder_2);
-            }
-        });
 
 
-        findViewById(R.id.loc).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String info=mEditTextForImei.getText().toString();
-                if(StringUtil.isEmpty(info)){
-                    DialogUtil.showLongToast(getFaceContext(),"不能是null");
-                    return;
-                }
-                SharedPreferencesUtils.putString(SharedPreferencesKeys.Mi_Imei_Phone_loc,info);
 
-                MidMessageP2POrder_3 midMessageOrder_2 = new MidMessageP2POrder_3(MidMessageCMDKeys.MidMessageCMD_P2P_Get_ShowLoc, DeviceInfo.getInstens().getSU_UUID());
-                midMessageOrder_2.setIsSendToNet(true);
-                midMessageOrder_2.putKeyValue(MidMessage.Key_To_Which_DeviceID, info);
-                midMessageOrder_2.setmFaceCommCallBack(mFaceCommCallBack);
-                MiPushHandlerManger.getInstance().addOrder(midMessageOrder_2);
 
-            }
-        });
 
         findViewById(R.id.clear).setOnClickListener(new OnClickListener() {
             @Override
@@ -310,23 +278,7 @@ public class MiPushMainActivity extends FaceBaseActivity_1 {
         });
     }
 
-    FaceCommCallBack mFaceCommCallBack = new FaceCommCallBack() {
-        @Override
-        public boolean callBack(Object[] t) {
 
-            MidMessage mid= (MidMessage) t[0];
-           String info= (String) mid.getByKey(MidMessage.Key_Res);
-            logList.add(info);
-            mHan.post(new Runnable() {
-                @Override
-                public void run() {
-                    refreshLogInfo();
-                }
-            });
-
-            return false;
-        }
-    };
 
     @Override
     protected void onResume() {
