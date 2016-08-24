@@ -130,6 +130,7 @@ public abstract class SuApplication extends android.app.Application implements S
         public void onServiceConnected(ComponentName name, IBinder service) {
             myService = IMyServiceSetGetClass.Stub.asInterface(service);
             sendBroadcast(new Intent(AidlServiceSetGetClass_CheckMain.MyServiceSetGetClassStartOK));
+            Su.log("启动Aidl完成");
             Su.logApp("serviceConnectionAidl onServiceConnected " + this.hashCode() + " " + DateUtil.getCurrentTime());
             checkService();
         }

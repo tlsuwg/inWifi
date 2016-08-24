@@ -47,8 +47,20 @@ public class SharedPreferencesKeys {
     public static String DeviceCapacityBaseUserSettingSenseEnable ="DeviceCapacityBaseUserSettingSenseEnable";
 
 
+
+
     public static String SunShaoQingphoneNumberForServer ="SunShaoQingphoneNumberForServer";
     public static String SunShaoQingregisterNoSendServerStatus ="SunShaoQingregisterNoSendServerStatus";
     public static String SunShaoQingRegisterSucceed="SunShaoQingRegisterSucceed";
     public static String SunShaoQingWifiPassWord="SunShaoQingWifiPassWord";
+
+
+    public static String car_storage_init="car_storage_init";
+    public static String carFullDir="car_full_video_dir";
+    public static String FileStorageMode="FileStorageMode";
+    public static String AllSize="AllSize";
+    public static String FileStorageMode_OneTime="FileStorageMode_One_Time";
+    public static String FileStorageModeSizeFilesSize="FileStorageModeSizeFilesSize";
+    public static String width="video_width";
+    public static String heigth="video_heigth";
 }

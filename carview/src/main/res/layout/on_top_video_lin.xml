@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/top_video_lin"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="#88CDC5BF"
+    android:layout_height="match_parent">
+
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/showDirFile"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="文件外部打开"
+            />
+        <Button
+            android:id="@+id/showSetting"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="配置"
+
+            />
+
+        <Button
+            android:id="@+id/dis"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="消失"
+
+            />
+
+    </TableRow>
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/showDirFileInApp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="文件操作"
+            />
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text=""
+
+            />
+
+    </TableRow>
+
+
+
+</TableLayout>

@@ -102,7 +102,8 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:vmSafeMode="false">
+        android:debuggable="true"
+        >
 
 
         <!--<meta-data-->
@@ -119,15 +120,7 @@
             android:value="Android_Demo" />
 
 
-        <!--aidl 提供对外服务 可以再主进程 也可以不再主进程  -->
-        <!--android:process=":aidl_pro"-->
-        <service
-            android:name="com.hxuehh.appCore.aidl.AidlServiceSetGetClass_CheckMain"
-            android:exported="true">
-        </service>
 
-        <!-- 必须是UI进程-->
-        <service android:name="com.hxuehh.appCore.app.AidlstartCheckAppService" />
 
 
         <service android:name=".server.Services.MainService_UDPreviceback_TCPLongLink" />
@@ -383,12 +376,6 @@
 
 
 
-        <!--捕获异常-->
-        <activity
-            android:name="com.hxuehh.appCore.develop.DevShowErrAc"
-            android:configChanges="keyboardHidden|orientation"
-            android:process=":showErr"
-            android:screenOrientation="portrait"></activity>
 
 
 

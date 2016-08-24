@@ -74,6 +74,16 @@ public class AppStaticSetting {
     public static long Light_Lock_Time=1000l;//开闭灯传感器关闭200毫秒
     public static long UnLcokLastTime=200l;//解锁之后还要延迟100 毫秒
 
+
+
+
+    public static long FullStorageSize=2;//单位G
+    public static long SDStorageSize=80;
+    public static String carDir="car_video";
+    public static String vedioEnd=".3gp";
+    public static long OneCarFilezSize=2*1024*1024;
+    public static String noDeleteFlag="重要_";
+
     static{
         if(!isTest){
             isMiTestLog =false;

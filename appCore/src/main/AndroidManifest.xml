@@ -18,6 +18,23 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
+
+        <!--捕获异常-->
+        <activity
+            android:name="com.hxuehh.appCore.develop.DevShowErrAc"
+            android:configChanges="keyboardHidden|orientation"
+            android:process=":showErr"
+            android:screenOrientation="portrait"></activity>
+
+        <!--&lt;!&ndash;aidl 提供对外服务 可以再主进程 也可以不再主进程  &ndash;&gt;-->
+        <!--&lt;!&ndash;android:process=":aidl_pro"&ndash;&gt;-->
+        <!--<service-->
+            <!--android:name="com.hxuehh.appCore.aidl.AidlServiceSetGetClass_CheckMain"-->
+            <!--android:exported="true">-->
+        <!--</service>-->
+        <!--&lt;!&ndash; 必须是UI进程&ndash;&gt;-->
+        <!--<service android:name="com.hxuehh.appCore.app.AidlstartCheckAppService" />-->
+
     </application>
 
 </manifest>
