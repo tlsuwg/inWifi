@@ -442,6 +442,7 @@ public class OnTopActivity extends FaceBaseActivity_1 {
 //                    manger.add(byteHead);
 
                     while (isVideoGetting) {
+                        Su.log("read0");
                         int readed = input.read(bs);
                         Su.log("read" + readed);
                         if (readed > 0) {
