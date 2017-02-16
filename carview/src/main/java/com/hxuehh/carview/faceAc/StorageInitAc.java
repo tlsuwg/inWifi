@@ -1,6 +1,7 @@
 package com.hxuehh.carview.faceAc;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.StatFs;
 import android.view.View;
@@ -66,8 +67,27 @@ public class StorageInitAc extends FaceBaseActivity_1 {
         String info = "本机存储：" + StringUtil.N + "系统" + FileUtil.getInfo(system) + (sd == null ? "" : StringUtil.N + "外部" + FileUtil.getInfo(sd));
         mPro.setOk(info, false);
         if (sd != null) {
-            long sdCanUsed = sd.getFreeBytes();
-            long sdAll = sd.getTotalBytes();
+
+            long blockSize;
+            long totalBlocks;
+            long availableBlocks;
+// 由于API18（Android4.3）以后getBlockSize过时并且改为了getBlockSizeLong
+// 因此这里需要根据版本号来使用那一套API
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2)
+            {
+                blockSize = sd.getBlockSizeLong();
+                totalBlocks = sd.getBlockCountLong();
+                availableBlocks = sd.getAvailableBlocksLong();
+            }
+            else
+            {
+                blockSize = sd.getBlockSize();
+                totalBlocks = sd.getBlockCount();
+                availableBlocks = sd.getAvailableBlocks();
+            }
+
+            long sdCanUsed = totalBlocks* blockSize ;
+            long sdAll = availableBlocks*blockSize;
             if (sdCanUsed >= AppStaticSetting.FullStorageSize * 1024 * 1024 * 1024) {
                 saveDir();
             } else if (sdCanUsed / sdAll * 100 >= AppStaticSetting.SDStorageSize) {

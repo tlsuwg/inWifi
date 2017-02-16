@@ -1,1 +1,1 @@
-include  ':appCore', ':carview',':apprebirth',':vitamio'
+include  ':carview',':appCore'

@@ -70,10 +70,17 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+
+            <!--title-->
+            <LinearLayout
+                android:id="@+id/pro_lin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="设置质量" />
+                android:orientation="horizontal"></LinearLayout>
+
+
+            <!---->
+
 
             <RelativeLayout
                 android:id="@+id/seekbar_lin"
@@ -82,11 +89,11 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/seekbar_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
-                    android:id="@+id/seekbar_text"
                     android:orientation="vertical">
 
                     <TextView
@@ -107,21 +114,60 @@
                         android:text=" " />
                 </LinearLayout>
 
-
-
-                <SeekBar
-                    android:id="@+id/seekbar"
-                    android:layout_toRightOf="@id/seekbar_text"
+                <LinearLayout
+                    android:id="@+id/check_select_lin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true" />
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/seekbar_text"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/spinner_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可择:" />
+
+                    <Spinner
+                        android:id="@+id/spinner_for_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       >
+                    </Spinner>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </RelativeLayout>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"
+                android:text="确实使用该分辨率"
+                android:visibility="gone"
+                android:id="@+id/select_button_for_video"/>
+
+
             <SurfaceView
                 android:id="@+id/mSurfaceView_On_top"
-                android:layout_width="320px"
-                android:layout_height="240px" />
+                android:layout_width="1px"
+                android:layout_height="1px" />
+
 
             <ImageView
                 android:id="@+id/mSurfaceView_On_top_image_view"
